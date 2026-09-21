@@ -1,0 +1,25 @@
+# Render Blueprint: New > Blueprint in the Render dashboard, pick this repo.
+# Secrets marked sync: false are entered in the dashboard (never commit them).
+services:
+  - type: web
+    name: masteria-backend
+    runtime: docker
+    plan: free
+    region: singapore           # closest Render region to India
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    autoDeployTrigger: checksPass   # deploy main only after GitHub CI passes
+    envVars:
+      - key: MONGODB_URI          # MongoDB Atlas connection string, e.g. mongodb+srv://user:pass@cluster0.x.mongodb.net/masteria
+        sync: false
+      - key: FIREBASE_PROJECT_ID  # Firebase console > Project settings > Project ID
+        sync: false
+      - key: NVIDIA_API_KEYS      # comma-separated NIM keys, rotated on failure/rate limit
+        sync: false
+      - key: JWT_SECRET           # stable across deploys so users stay signed in
+        generateValue: true
+      - key: TIMEZONE
+        value: Asia/Kolkata
+      - key: KEEP_ALIVE           # self-ping /health every 5 min so the free instance doesn't sleep
+        value: "true"

@@ -1,0 +1,48 @@
+# secrets + runtime data
+backend/.env
+.env
+.env.*
+!.env.example
+# env files saved without the leading dot
+**/env
+**/*.env
+backend/data/
+/data/
+# NOTE: not a bare "data/" - that also ignored android/.../masteria/data (the app's network layer).
+*.jks
+*.keystore
+*.p12
+*.pem
+keystore.properties
+signing.properties
+**/release-keystore*
+
+# build output
+build/
+**/build/
+out/
+.gradle/
+**/.gradle/
+.kotlin/
+**/.kotlin/
+*.class
+*.log
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+local.properties
+.DS_Store
+Thumbs.db
+
+# Firebase client config (per developer / per project)
+android/app/google-services.json
+
+# Android artifacts
+*.apk
+*.aab
+*.ap_
+captures/
+.externalNativeBuild/
+.cxx/

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Development: the Ktor backend runs on the laptop over plain HTTP (emulator 10.0.2.2 or LAN IP).
+     Point BACKEND_URL at an HTTPS deployment for production and remove cleartext. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

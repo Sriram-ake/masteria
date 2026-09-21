@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "java.basics.q01",
+    "topicId": "java.basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Which of these is NOT a primitive type in Java?",
+    "options": [
+      "int",
+      "boolean",
+      "char",
+      "String"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "String is a class in java.lang; int, boolean and char are primitives.",
+    "hint": "Primitive type names are all lowercase keywords.",
+    "code": null
+  },
+  {
+    "id": "java.basics.q02",
+    "topicId": "java.basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What does this code print?",
+    "options": [
+      "3.5",
+      "3",
+      "4",
+      "3.0"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Both operands are int, so / does integer division and drops the fraction: 7 / 2 = 3.",
+    "hint": "Look at the types of a and b.",
+    "code": "int a = 7, b = 2;\nSystem.out.println(a / b);"
+  },
+  {
+    "id": "java.basics.q03",
+    "topicId": "java.basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What is the default value of an int instance field that is never assigned?",
+    "options": [
+      "null",
+      "-1",
+      "0",
+      "Compile error: the field must be initialised"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Fields get default values: 0 for numeric primitives, false for boolean, null for references.",
+    "hint": "Fields and local variables follow different initialisation rules.",
+    "code": null
+  },
+  {
+    "id": "java.basics.q04",
+    "topicId": "java.basics",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What does this code print?",
+    "options": [
+      "16",
+      "11",
+      "13",
+      "10"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "x += 3 makes x 8, then x *= 2 makes it 16.",
+    "hint": "Apply the compound assignments one at a time.",
+    "code": "int x = 5;\nx += 3;\nx *= 2;\nSystem.out.println(x);"
+  },
+  {
+    "id": "java.basics.q05",
+    "topicId": "java.basics",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "6 11",
+      "7 11",
+      "7 12",
+      "6 12"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "i++ yields 5 (i becomes 6), then ++i makes i 7 and yields 7. So j = 5 + 7 = 12 and i = 7.",
+    "hint": "Post-increment uses the old value; pre-increment uses the new value.",
+    "code": "int i = 5;\nint j = i++ + ++i;\nSystem.out.println(i + \" \" + j);"
+  },
+  {
+    "id": "java.basics.q06",
+    "topicId": "java.basics",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "3345",
+      "15",
+      "12345",
+      "339"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Evaluated left to right: 1 + 2 = 3 (int), then \"3\" + \"3\" = \"33\", then \"334\", then \"3345\".",
+    "hint": "+ is evaluated left to right. What happens once a String appears?",
+    "code": "String s = 1 + 2 + \"3\" + 4 + 5;\nSystem.out.println(s);"
+  },
+  {
+    "id": "java.basics.q07",
+    "topicId": "java.basics",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "12457",
+      "1245",
+      "124578",
+      "0123456"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Multiples of 3 (0, 3, 6) are skipped by continue, and the loop stops at 7 before printing it.",
+    "hint": "Trace each value of i and check both if statements in order.",
+    "code": "for (int i = 0; i < 10; i++) {\n    if (i % 3 == 0) continue;\n    if (i == 7) break;\n    System.out.print(i);\n}"
+  },
+  {
+    "id": "java.basics.q08",
+    "topicId": "java.basics",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "B",
+      "BD",
+      "ABCD",
+      "BCD"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Execution jumps to case 10 and, with no break statements, falls through to case 15 and default.",
+    "hint": "What happens after a matching case when there is no break?",
+    "code": "int x = 10;\nswitch (x) {\n    case 5: System.out.print(\"A\");\n    case 10: System.out.print(\"B\");\n    case 15: System.out.print(\"C\");\n    default: System.out.print(\"D\");\n}"
+  },
+  {
+    "id": "java.basics.q09",
+    "topicId": "java.basics",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "-128",
+      "128",
+      "Compile error: possible lossy conversion",
+      "0"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "b++ includes an implicit cast back to byte, so it compiles. 127 + 1 overflows the byte range and wraps to -128.",
+    "hint": "Think about the range of a byte and what ++ does at its maximum.",
+    "code": "byte b = 127;\nb++;\nSystem.out.println(b);"
+  },
+  {
+    "id": "java.basics.q10",
+    "topicId": "java.basics",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "true true",
+      "true false",
+      "false false",
+      "false true"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "new String creates a separate object, so == (reference comparison) is false, while equals compares the characters and is true.",
+    "hint": "== compares references for objects; equals compares content.",
+    "code": "String s1 = \"hi\";\nString s2 = new String(\"hi\");\nSystem.out.println((s1 == s2) + \" \" + s1.equals(s2));"
+  },
+  {
+    "id": "java.classes.q01",
+    "topicId": "java.classes",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Which keyword is used to create an object of a class?",
+    "options": [
+      "class",
+      "this",
+      "new",
+      "create"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "The new operator allocates an object and calls its constructor, e.g. new Dog().",
+    "hint": "It is the word placed before the constructor call.",
+    "code": null
+  },
+  {
+    "id": "java.classes.q02",
+    "topicId": "java.classes",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What is the return type of a constructor?",
+    "options": [
+      "void",
+      "It has no return type",
+      "The class type",
+      "int"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "A constructor has no return type at all, not even void. Adding void turns it into an ordinary method.",
+    "hint": "Think about what happens if you write void before a constructor's name.",
+    "code": null
+  },
+  {
+    "id": "java.classes.q03",
+    "topicId": "java.classes",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "If a class declares no constructor at all, what does the compiler do?",
+    "options": [
+      "Nothing; objects of it cannot be created",
+      "Adds a constructor taking every field",
+      "Adds a static factory method",
+      "Adds a default no-argument constructor"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "When no constructor is written, the compiler inserts a default no-arg constructor that calls super().",
+    "hint": "You can still write new MyClass() for such a class. Why?",
+    "code": null
+  },
+  {
+    "id": "java.classes.q04",
+    "topicId": "java.classes",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What does this code print?",
+    "options": [
+      "0",
+      "null",
+      "1",
+      "Compile error: count is not initialised"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "The int field count starts at 0 by default, and c.count++ makes it 1.",
+    "hint": "Fields get default values even if you never assign them.",
+    "code": "class Counter {\n    int count;\n}\nclass Main {\n    public static void main(String[] args) {\n        Counter c = new Counter();\n        c.count++;\n        System.out.println(c.count);\n    }\n}"
+  },
+  {
+    "id": "java.classes.q05",
+    "topicId": "java.classes",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "5",
+      "9",
+      "0",
+      "14"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "b = a copies the reference, so a and b point to the same Box. The last write, 9, is what a.v shows.",
+    "hint": "How many Box objects are created here?",
+    "code": "class Box { int v; }\nclass Main {\n    public static void main(String[] args) {\n        Box a = new Box();\n        Box b = a;\n        a.v = 5;\n        b.v = 9;\n        System.out.println(a.v);\n    }\n}"
+  },
+  {
+    "id": "java.classes.q06",
+    "topicId": "java.classes",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "3",
+      "1",
+      "0",
+      "Compile error: count must be accessed through an object"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "A static field is shared by all objects. Each of the 3 constructor calls increments the same count.",
+    "hint": "Is there one count per object, or one for the whole class?",
+    "code": "class Player {\n    static int count = 0;\n    Player() { count++; }\n}\nclass Main {\n    public static void main(String[] args) {\n        new Player(); new Player(); new Player();\n        System.out.println(Player.count);\n    }\n}"
+  },
+  {
+    "id": "java.classes.q07",
+    "topicId": "java.classes",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "50",
+      "0",
+      "10",
+      "60"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Java passes a copy of the primitive value. Changing x inside change() does not affect n.",
+    "hint": "Java is always pass-by-value. What exactly is copied here?",
+    "code": "class Main {\n    static void change(int x) { x = 50; }\n    public static void main(String[] args) {\n        int n = 10;\n        change(n);\n        System.out.println(n);\n    }\n}"
+  },
+  {
+    "id": "java.classes.q08",
+    "topicId": "java.classes",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "1",
+      "3",
+      "Compile error: cannot reassign parameter b",
+      "2"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "b.v = 2 changes the caller's object. Then b is pointed at a new Box, so setting 3 affects only that new object.",
+    "hint": "The reference is copied. Which changes reach the original object?",
+    "code": "class Box { int v = 1; }\nclass Main {\n    static void reset(Box b) {\n        b.v = 2;\n        b = new Box(); b.v = 3;\n    }\n    public static void main(String[] args) {\n        Box box = new Box();\n        reset(box);\n        System.out.println(box.v);\n    }\n}"
+  },
+  {
+    "id": "java.classes.q09",
+    "topicId": "java.classes",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What happens when this code is compiled and run?",
+    "options": [
+      "It prints null",
+      "Compile error: no constructor Car() is found",
+      "It prints an empty line",
+      "NullPointerException at runtime"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Once a class declares any constructor, the compiler no longer adds the default no-arg one, so new Car() does not compile.",
+    "hint": "When does the compiler add a default constructor?",
+    "code": "class Car {\n    String model;\n    Car(String model) { this.model = model; }\n}\nclass Main {\n    public static void main(String[] args) {\n        Car c = new Car();\n        System.out.println(c.model);\n    }\n}"
+  },
+  {
+    "id": "java.classes.q10",
+    "topicId": "java.classes",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "0",
+      "7",
+      "Compile error: x is already defined",
+      "null"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Inside the constructor, x = x assigns the parameter to itself, so the field stays 0. It should be this.x = x.",
+    "hint": "Inside the constructor, which x does the bare name x refer to?",
+    "code": "class Point {\n    int x;\n    Point(int x) { x = x; }\n}\nclass Main {\n    public static void main(String[] args) {\n        Point p = new Point(7);\n        System.out.println(p.x);\n    }\n}"
+  },
+  {
+    "id": "java.encapsulation.q01",
+    "topicId": "java.encapsulation",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Which access modifier makes a member visible ONLY inside its own class?",
+    "options": [
+      "protected",
+      "public",
+      "default (no modifier)",
+      "private"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "private members can be used only inside the class that declares them.",
+    "hint": "Rank the modifiers from most open to most restrictive.",
+    "code": null
+  },
+  {
+    "id": "java.encapsulation.q02",
+    "topicId": "java.encapsulation",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What does encapsulation mainly mean?",
+    "options": [
+      "Bundling data with the methods that use it and restricting direct access to the data",
+      "One class acquiring the fields and methods of another",
+      "Using the same method name with different parameters",
+      "Splitting a program into many packages"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Encapsulation keeps fields hidden (usually private) and exposes controlled access through methods.",
+    "hint": "Think of a capsule that wraps its contents and guards them.",
+    "code": null
+  },
+  {
+    "id": "java.encapsulation.q03",
+    "topicId": "java.encapsulation",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "A member has no access modifier. Who can access it?",
+    "options": [
+      "Every class everywhere",
+      "Only the class itself",
+      "Only classes in the same package",
+      "Subclasses in any package, but not other classes"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Default (package-private) access allows any class in the same package and nothing outside it, not even subclasses in other packages.",
+    "hint": "The default level is also called package-private.",
+    "code": null
+  },
+  {
+    "id": "java.encapsulation.q04",
+    "topicId": "java.encapsulation",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What happens when this code is compiled?",
+    "options": [
+      "It prints 100",
+      "Compile error: balance has private access in Account",
+      "It prints 0",
+      "It throws IllegalAccessException at runtime"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "balance is private, so Main cannot read a.balance. The compiler rejects it.",
+    "hint": "Check the access modifier on balance and where it is used.",
+    "code": "class Account {\n    private int balance = 100;\n}\nclass Main {\n    public static void main(String[] args) {\n        Account a = new Account();\n        System.out.println(a.balance);\n    }\n}"
+  },
+  {
+    "id": "java.encapsulation.q05",
+    "topicId": "java.encapsulation",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "150",
+      "85",
+      "0",
+      "100"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "The setter accepts 85 but silently ignores 150 because it fails the 0 to 100 check, so marks stays 85.",
+    "hint": "Trace each setMarks call through the if condition.",
+    "code": "class Student {\n    private int marks;\n    void setMarks(int m) { if (m >= 0 && m <= 100) marks = m; }\n    int getMarks() { return marks; }\n}\nclass Main {\n    public static void main(String[] args) {\n        Student s = new Student();\n        s.setMarks(85); s.setMarks(150);\n        System.out.println(s.getMarks());\n    }\n}"
+  },
+  {
+    "id": "java.encapsulation.q06",
+    "topicId": "java.encapsulation",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Which approach makes a class immutable?",
+    "options": [
+      "Make fields private and final, set them only in the constructor, and provide no setters",
+      "Make all methods static",
+      "Declare the class abstract",
+      "Make fields private but add public setters"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "An immutable object's state cannot change after construction: private final fields, no setters (and defensive copies of mutable fields).",
+    "hint": "An immutable object must never change after it is built.",
+    "code": null
+  },
+  {
+    "id": "java.encapsulation.q07",
+    "topicId": "java.encapsulation",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What happens when this class is compiled?",
+    "options": [
+      "It compiles, and setPort changes the port",
+      "It compiles, but setPort throws an exception at runtime",
+      "Compile error: cannot assign a value to final variable port",
+      "Compile error: final fields must be initialised where declared"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "A final field can be assigned only once, in its declaration or a constructor. Assigning it in setPort is a compile error.",
+    "hint": "Where is a final field allowed to be assigned?",
+    "code": "class Config {\n    private final int port;\n    Config(int port) { this.port = port; }\n    void setPort(int p) { this.port = p; }\n}"
+  },
+  {
+    "id": "java.encapsulation.q08",
+    "topicId": "java.encapsulation",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "10",
+      "Compile error: scores has private access",
+      "ArrayIndexOutOfBoundsException",
+      "99"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "getScores returns a reference to the private array itself, so the caller can modify it. This leaks internal state; return a copy instead.",
+    "hint": "Does the getter return a copy of the array or the array itself?",
+    "code": "class Team {\n    private int[] scores = {10, 20, 30};\n    int[] getScores() { return scores; }\n}\nclass Main {\n    public static void main(String[] args) {\n        Team t = new Team();\n        int[] s = t.getScores();\n        s[0] = 99;\n        System.out.println(t.getScores()[0]);\n    }\n}"
+  },
+  {
+    "id": "java.encapsulation.q09",
+    "topicId": "java.encapsulation",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What happens when this code is compiled and run?",
+    "options": [
+      "Compile error: other.cash has private access",
+      "It prints true",
+      "It prints false",
+      "IllegalAccessError at runtime"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "private is class-level, not object-level: code inside Wallet may read the private field of any Wallet. 50 > 30 is true.",
+    "hint": "Is private access checked per class or per object?",
+    "code": "class Wallet {\n    private int cash;\n    Wallet(int cash) { this.cash = cash; }\n    boolean richerThan(Wallet other) { return this.cash > other.cash; }\n}\nclass Main {\n    public static void main(String[] args) {\n        System.out.println(new Wallet(50).richerThan(new Wallet(30)));\n    }\n}"
+  },
+  {
+    "id": "java.encapsulation.q10",
+    "topicId": "java.encapsulation",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "JAVA!",
+      "JAVA",
+      "java!",
+      "java"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "String is immutable. toUpperCase and concat return new strings, but the results are discarded, so s is unchanged.",
+    "hint": "Do these String methods change s, or return something new?",
+    "code": "String s = \"java\";\ns.toUpperCase();\ns.concat(\"!\");\nSystem.out.println(s);"
+  },
+  {
+    "id": "java.inheritance.q01",
+    "topicId": "java.inheritance",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Which keyword does a class use to inherit from another class?",
+    "options": [
+      "extends",
+      "implements",
+      "inherits",
+      "super"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "A class inherits from a class with extends, e.g. class Dog extends Animal.",
+    "hint": "implements is used for interfaces, not classes.",
+    "code": null
+  },
+  {
+    "id": "java.inheritance.q02",
+    "topicId": "java.inheritance",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Which of these is NOT allowed in Java?",
+    "options": [
+      "A class implementing two interfaces",
+      "A class extending one class and implementing an interface",
+      "A class extending two classes",
+      "An interface extending two interfaces"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Java allows only single inheritance of classes, to avoid ambiguity. Multiple interfaces are allowed.",
+    "hint": "Java avoids multiple inheritance of state and implementation from classes.",
+    "code": null
+  },
+  {
+    "id": "java.inheritance.q03",
+    "topicId": "java.inheritance",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What does this code print?",
+    "options": [
+      "Meow",
+      "Some sound",
+      "Some sound then Meow",
+      "Compile error"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Cat overrides sound(), so calling it on a Cat runs Cat's version.",
+    "hint": "Which class's sound() belongs to a Cat object?",
+    "code": "class Animal {\n    void sound() { System.out.println(\"Some sound\"); }\n}\nclass Cat extends Animal {\n    void sound() { System.out.println(\"Meow\"); }\n}\nclass Main {\n    public static void main(String[] args) {\n        new Cat().sound();\n    }\n}"
+  },
+  {
+    "id": "java.inheritance.q04",
+    "topicId": "java.inheritance",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Every class in Java directly or indirectly inherits from which class?",
+    "options": [
+      "Class",
+      "Object",
+      "System",
+      "Main"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "java.lang.Object is the root of the class hierarchy; a class without extends implicitly extends Object.",
+    "hint": "Methods like toString() and equals() come from this class.",
+    "code": null
+  },
+  {
+    "id": "java.inheritance.q05",
+    "topicId": "java.inheritance",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "C",
+      "CBA",
+      "ABC",
+      "BC"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Every constructor first calls its parent's constructor (implicit super()), so A runs first, then B, then C.",
+    "hint": "What is the first thing every constructor does, even if you don't write it?",
+    "code": "class A { A() { System.out.print(\"A\"); } }\nclass B extends A { B() { System.out.print(\"B\"); } }\nclass C extends B { C() { System.out.print(\"C\"); } }\nclass Main {\n    public static void main(String[] args) {\n        new C();\n    }\n}"
+  },
+  {
+    "id": "java.inheritance.q06",
+    "topicId": "java.inheritance",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "Bike",
+      "Vehicle",
+      "StackOverflowError",
+      "Vehicle-Bike"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "super.info() calls the parent's version, which returns \"Vehicle\", and Bike appends \"-Bike\".",
+    "hint": "super.info() refers to which class's method?",
+    "code": "class Vehicle {\n    String info() { return \"Vehicle\"; }\n}\nclass Bike extends Vehicle {\n    String info() { return super.info() + \"-Bike\"; }\n}\nclass Main {\n    public static void main(String[] args) {\n        System.out.println(new Bike().info());\n    }\n}"
+  },
+  {
+    "id": "java.inheritance.q07",
+    "topicId": "java.inheritance",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Which of these methods can NOT be overridden in a subclass?",
+    "options": [
+      "A final method",
+      "A public method",
+      "A protected method",
+      "A method that returns void"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "A final method cannot be overridden. (static and private methods are not overridden either, but they are not listed.)",
+    "hint": "One keyword exists to lock a method's behaviour.",
+    "code": null
+  },
+  {
+    "id": "java.inheritance.q08",
+    "topicId": "java.inheritance",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What happens when this code is compiled?",
+    "options": [
+      "It compiles, and new Child() prints child",
+      "It compiles, and Java passes 0 to Parent(int)",
+      "Compile error: Child() implicitly calls super(), but Parent has no no-arg constructor",
+      "Compile error: a subclass cannot declare its own constructor"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Child() starts with an implicit super(), but Parent only has Parent(int), so the call fails. Fix it with super(someInt).",
+    "hint": "What call does the compiler insert at the start of Child()?",
+    "code": "class Parent {\n    Parent(int x) { System.out.print(x); }\n}\nclass Child extends Parent {\n    Child() { System.out.print(\"child\"); }\n}"
+  },
+  {
+    "id": "java.inheritance.q09",
+    "topicId": "java.inheritance",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "Q Q",
+      "P Q",
+      "P P",
+      "Q P"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Fields are not polymorphic: obj.name uses the declared type P. Methods are overridden: obj.getName() runs Q's version and returns Q's field.",
+    "hint": "Are fields looked up the same way as overridden methods?",
+    "code": "class P {\n    String name = \"P\";\n    String getName() { return name; }\n}\nclass Q extends P {\n    String name = \"Q\";\n    String getName() { return name; }\n}\n// inside main():\nP obj = new Q();\nSystem.out.println(obj.name + \" \" + obj.getName());"
+  },
+  {
+    "id": "java.inheritance.q10",
+    "topicId": "java.inheritance",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What happens when this code is compiled?",
+    "options": [
+      "It compiles; Derived.show() overloads Base.show()",
+      "It compiles; Derived.show() is package-private and overrides Base.show()",
+      "It compiles, but calling show() throws an exception",
+      "Compile error: show() in Derived cannot reduce visibility from public"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "An overriding method cannot have weaker access than the method it overrides. public cannot become package-private.",
+    "hint": "Compare the access modifiers of the two show() methods.",
+    "code": "class Base {\n    public void show() { }\n}\nclass Derived extends Base {\n    void show() { }\n}"
+  },
+  {
+    "id": "java.polymorphism.q01",
+    "topicId": "java.polymorphism",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What is method overloading?",
+    "options": [
+      "Redefining a parent's method with the same signature in a subclass",
+      "Same method name with different parameter lists in the same class",
+      "Two classes with the same name in different packages",
+      "A method that calls itself"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Overloading means one name, different parameter lists. Redefining with the same signature in a subclass is overriding.",
+    "hint": "Overloading is about parameter lists; overriding is about subclasses.",
+    "code": null
+  },
+  {
+    "id": "java.polymorphism.q02",
+    "topicId": "java.polymorphism",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Runtime polymorphism in Java is achieved through:",
+    "options": [
+      "Method overloading",
+      "Constructors",
+      "Method overriding",
+      "Static methods"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "With overriding, the JVM picks the method based on the actual object at runtime (dynamic dispatch).",
+    "hint": "Which one is decided while the program runs, based on the actual object?",
+    "code": null
+  },
+  {
+    "id": "java.polymorphism.q03",
+    "topicId": "java.polymorphism",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What does this code print?",
+    "options": [
+      "Shape",
+      "Shape then Circle",
+      "Compile error",
+      "Circle"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "The object is a Circle, and draw() is overridden, so Circle's draw() runs even through a Shape reference.",
+    "hint": "Which matters for overridden methods: the reference type or the object type?",
+    "code": "class Shape {\n    void draw() { System.out.println(\"Shape\"); }\n}\nclass Circle extends Shape {\n    void draw() { System.out.println(\"Circle\"); }\n}\nclass Main {\n    public static void main(String[] args) {\n        Shape s = new Circle();\n        s.draw();\n    }\n}"
+  },
+  {
+    "id": "java.polymorphism.q04",
+    "topicId": "java.polymorphism",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "When is a call to an overloaded method resolved?",
+    "options": [
+      "At compile time",
+      "At runtime",
+      "When the class is loaded",
+      "Never; Java does not support overloading"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "The compiler picks the overload from the argument types, so overloading is compile-time (static) polymorphism.",
+    "hint": "Which one does the compiler choose, using only the argument types?",
+    "code": null
+  },
+  {
+    "id": "java.polymorphism.q05",
+    "topicId": "java.polymorphism",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "double",
+      "Compile error: ambiguous call",
+      "long",
+      "int"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "There is no f(int). Both long and double are widening options, and Java picks the most specific one, long.",
+    "hint": "Java prefers the closest widening conversion.",
+    "code": "class Main {\n    static void f(long x) { System.out.println(\"long\"); }\n    static void f(double x) { System.out.println(\"double\"); }\n    public static void main(String[] args) {\n        f(5);\n    }\n}"
+  },
+  {
+    "id": "java.polymorphism.q06",
+    "topicId": "java.polymorphism",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What happens when this code is compiled and run?",
+    "options": [
+      "ClassCastException at runtime",
+      "It prints done",
+      "Compile error: incompatible types",
+      "It prints null"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "The cast compiles because an Animal might be a Cat, but the real object is a Dog, so the JVM throws ClassCastException.",
+    "hint": "The compiler only checks the cast is possible. What is the actual object?",
+    "code": "class Animal { }\nclass Dog extends Animal { }\nclass Cat extends Animal { }\nclass Main {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        Cat c = (Cat) a;\n        System.out.println(\"done\");\n    }\n}"
+  },
+  {
+    "id": "java.polymorphism.q07",
+    "topicId": "java.polymorphism",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What happens when this code is compiled?",
+    "options": [
+      "It prints Woof",
+      "Compile error: cannot find symbol bark() in Animal",
+      "ClassCastException at runtime",
+      "It compiles but prints nothing"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "The compiler checks methods against the reference type, and Animal has no bark(), even though the object is a Dog. Cast first: ((Dog) a).bark().",
+    "hint": "What methods does the compiler allow on a reference of type Animal?",
+    "code": "class Animal { void eat() { } }\nclass Dog extends Animal {\n    void bark() { System.out.println(\"Woof\"); }\n}\nclass Main {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        a.bark();\n    }\n}"
+  },
+  {
+    "id": "java.polymorphism.q08",
+    "topicId": "java.polymorphism",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "BB",
+      "AA",
+      "BA",
+      "AB"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Static methods are hidden, not overridden, so x.who() uses the reference type A. me() is overridden, so it runs B's version.",
+    "hint": "Are static methods dispatched on the object at runtime?",
+    "code": "class A {\n    static String who() { return \"A\"; }\n    String me() { return \"A\"; }\n}\nclass B extends A {\n    static String who() { return \"B\"; }\n    String me() { return \"B\"; }\n}\n// inside main():\nA x = new B();\nSystem.out.println(x.who() + x.me());"
+  },
+  {
+    "id": "java.polymorphism.q09",
+    "topicId": "java.polymorphism",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "Object",
+      "Compile error: ambiguous call",
+      "String",
+      "NullPointerException"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "null fits both, but String is more specific than Object, so print(String) is chosen.",
+    "hint": "When several overloads fit, Java picks the most specific one.",
+    "code": "class Main {\n    static void print(Object o) { System.out.println(\"Object\"); }\n    static void print(String s) { System.out.println(\"String\"); }\n    public static void main(String[] args) {\n        print(null);\n    }\n}"
+  },
+  {
+    "id": "java.polymorphism.q10",
+    "topicId": "java.polymorphism",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "Parent",
+      "Child 5",
+      "Parent then Child 5",
+      "Child 0"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Parent's constructor calls show(), which dispatches to Child's override. Child's field x has not been initialised yet, so it is still 0.",
+    "hint": "When does x = 5 run compared with Parent's constructor?",
+    "code": "class Parent {\n    Parent() { show(); }\n    void show() { System.out.println(\"Parent\"); }\n}\nclass Child extends Parent {\n    int x = 5;\n    void show() { System.out.println(\"Child \" + x); }\n}\n// inside main():\nnew Child();"
+  },
+  {
+    "id": "java.interfaces.q01",
+    "topicId": "java.interfaces",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Can you create an object of an abstract class directly with new?",
+    "options": [
+      "No, an abstract class cannot be instantiated",
+      "Yes, always",
+      "Yes, if it has a constructor",
+      "Only if all its methods are abstract"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "new AbstractClass() is a compile error. You instantiate a concrete subclass instead (or an anonymous class).",
+    "hint": "What does 'abstract' say about whether the class is complete?",
+    "code": null
+  },
+  {
+    "id": "java.interfaces.q02",
+    "topicId": "java.interfaces",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Which keyword does a class use to adopt an interface?",
+    "options": [
+      "extends",
+      "implements",
+      "uses",
+      "inherits"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "A class implements an interface, e.g. class Dog implements Pet. An interface extends another interface.",
+    "hint": "Classes extend classes. What do they do with interfaces?",
+    "code": null
+  },
+  {
+    "id": "java.interfaces.q03",
+    "topicId": "java.interfaces",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Fields declared in an interface are implicitly:",
+    "options": [
+      "private",
+      "protected static",
+      "public static final",
+      "public but not final"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Every interface field is a constant: public, static and final, even if you don't write those words.",
+    "hint": "Interfaces cannot hold per-object state.",
+    "code": null
+  },
+  {
+    "id": "java.interfaces.q04",
+    "topicId": "java.interfaces",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What does this code print?",
+    "options": [
+      "Namaste",
+      "Compile error: cannot create a Greeter reference",
+      "Nothing is printed",
+      "Compile error: greet() is not static"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "An interface type can refer to any object that implements it. g.greet() runs Hindi's greet().",
+    "hint": "An interface reference can point to an object of an implementing class.",
+    "code": "interface Greeter {\n    void greet();\n}\nclass Hindi implements Greeter {\n    public void greet() { System.out.println(\"Namaste\"); }\n}\nclass Main {\n    public static void main(String[] args) {\n        Greeter g = new Hindi();\n        g.greet();\n    }\n}"
+  },
+  {
+    "id": "java.interfaces.q05",
+    "topicId": "java.interfaces",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What happens when this code is compiled?",
+    "options": [
+      "It compiles fine",
+      "Compile error: area() must be declared public in Square",
+      "It compiles, but area() always returns 0.0",
+      "Compile error: interface methods cannot return double"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Interface methods are implicitly public, and an implementation cannot reduce visibility. Square's package-private area() fails.",
+    "hint": "What is the implicit access level of an interface method?",
+    "code": "interface Shape {\n    double area();\n}\nclass Square implements Shape {\n    double side = 2;\n    double area() { return side * side; }\n}"
+  },
+  {
+    "id": "java.interfaces.q06",
+    "topicId": "java.interfaces",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What does this code print?",
+    "options": [
+      "Compile error: FileLogger must implement log()",
+      "Nothing is printed",
+      "AbstractMethodError at runtime",
+      "default log"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "A default method has a body in the interface, so FileLogger inherits it without overriding it.",
+    "hint": "Does a default method need to be implemented by the class?",
+    "code": "interface Logger {\n    default void log() { System.out.println(\"default log\"); }\n}\nclass FileLogger implements Logger { }\nclass Main {\n    public static void main(String[] args) {\n        new FileLogger().log();\n    }\n}"
+  },
+  {
+    "id": "java.interfaces.q07",
+    "topicId": "java.interfaces",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Which statement about abstract classes and interfaces is TRUE?",
+    "options": [
+      "An interface can have constructors",
+      "A class can extend two abstract classes",
+      "An abstract class can have constructors and instance fields; an interface cannot",
+      "An abstract class cannot contain concrete methods"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Abstract classes can hold state and constructors. Interfaces have no constructors and only constant fields.",
+    "hint": "Which of the two can hold per-object state?",
+    "code": null
+  },
+  {
+    "id": "java.interfaces.q08",
+    "topicId": "java.interfaces",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What happens when this code is compiled?",
+    "options": [
+      "It compiles; new C().hi() prints A",
+      "It compiles; new C().hi() prints B",
+      "It compiles; new C().hi() prints AB",
+      "Compile error: C inherits conflicting default methods hi() and must override it"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "When two interfaces give the same default method, the class must override it to resolve the conflict (the diamond problem).",
+    "hint": "How would the compiler choose between two equal default methods?",
+    "code": "interface A { default void hi() { System.out.println(\"A\"); } }\ninterface B { default void hi() { System.out.println(\"B\"); } }\nclass C implements A, B { }"
+  },
+  {
+    "id": "java.interfaces.q09",
+    "topicId": "java.interfaces",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "AB",
+      "A",
+      "BA",
+      "Compile error: super cannot be used with interfaces"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "C overrides hi() and uses InterfaceName.super.hi() to call each default explicitly: \"A\" + \"B\".",
+    "hint": "X.super.method() calls the default method of interface X.",
+    "code": "interface A { default String hi() { return \"A\"; } }\ninterface B { default String hi() { return \"B\"; } }\nclass C implements A, B {\n    public String hi() { return A.super.hi() + B.super.hi(); }\n}\nclass Main {\n    public static void main(String[] args) {\n        System.out.println(new C().hi());\n    }\n}"
+  },
+  {
+    "id": "java.interfaces.q10",
+    "topicId": "java.interfaces",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "What does this code print?",
+    "options": [
+      "Sales",
+      "Init Sales",
+      "Compile error: an abstract class cannot have a constructor",
+      "Init"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Abstract classes can have constructors, which run when a subclass is created. print() then calls the overridden body().",
+    "hint": "An abstract class's constructor still runs as part of creating a subclass object.",
+    "code": "abstract class Report {\n    Report() { System.out.print(\"Init \"); }\n    abstract String body();\n    void print() { System.out.println(body()); }\n}\nclass Sales extends Report {\n    String body() { return \"Sales\"; }\n}\n// inside main():\nnew Sales().print();"
+  }
+]

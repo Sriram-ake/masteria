@@ -1,0 +1,60 @@
+name: CI
+
+# Every push and pull request: backend tests + an Android debug build.
+# Render deploys the backend only after these checks pass (render.yaml: autoDeployTrigger: checksPass).
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  backend:
+    name: Backend tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Test
+        working-directory: backend
+        run: chmod +x gradlew && ./gradlew test --no-daemon
+      - name: Build server jar
+        working-directory: backend
+        run: ./gradlew buildFatJar --no-daemon
+      - name: Test report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-test-report
+          path: backend/build/reports/tests/test
+
+  android:
+    name: Android debug build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: android-actions/setup-android@v3
+      - uses: gradle/actions/setup-gradle@v4
+      # No secrets needed: without google-services.json the app builds with Firebase disabled.
+      - name: Build debug APK
+        working-directory: android
+        run: |
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
+          chmod +x gradlew && ./gradlew assembleDebug --no-daemon

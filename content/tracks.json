@@ -1,0 +1,53 @@
+[
+  {
+    "id": "school-math",
+    "name": "Math Kingdom",
+    "world": "School",
+    "subject": "Mathematics · Class 9",
+    "description": "Integers to probability. Algebra is the gate to geometry.",
+    "icon": "function",
+    "recommendedFor": ["school", "self"],
+    "topics": [
+      { "id": "math.integers", "name": "Integers", "description": "Signed numbers, order of operations and number sense.", "icon": "plusminus", "tier": 0, "prereqs": [], "diagnostic": true },
+      { "id": "math.fractions", "name": "Fractions", "description": "Equivalent fractions, operations and decimals.", "icon": "divide", "tier": 0, "prereqs": [], "diagnostic": true },
+      { "id": "math.linear_equations", "name": "Algebra", "description": "Linear equations in one variable and simple word problems.", "icon": "function", "tier": 0, "prereqs": [], "diagnostic": true },
+      { "id": "math.geometry", "name": "Geometry", "description": "Lines, angles and angle pairs.", "icon": "angle", "tier": 1, "prereqs": ["math.linear_equations"], "diagnostic": false },
+      { "id": "math.probability", "name": "Probability", "description": "Chance of simple events and outcomes.", "icon": "dice", "tier": 1, "prereqs": ["math.fractions", "math.linear_equations"], "diagnostic": false },
+      { "id": "math.triangles", "name": "Triangles", "description": "Angle sum, Pythagoras and area.", "icon": "triangle", "tier": 2, "prereqs": ["math.geometry"], "diagnostic": false }
+    ]
+  },
+  {
+    "id": "ssc-quant",
+    "name": "SSC Quant Arena",
+    "world": "Exams",
+    "subject": "SSC CGL · Quantitative Aptitude",
+    "description": "Exam-pattern aptitude, from percentages to interest.",
+    "icon": "target",
+    "recommendedFor": ["exam"],
+    "topics": [
+      { "id": "quant.percentages", "name": "Percentages", "description": "Percent change, successive change and comparisons.", "icon": "percent", "tier": 0, "prereqs": [], "diagnostic": true },
+      { "id": "quant.ratio", "name": "Ratio & Proportion", "description": "Ratios, proportions and partnership sharing.", "icon": "scale", "tier": 0, "prereqs": [], "diagnostic": true },
+      { "id": "quant.averages", "name": "Averages", "description": "Mean, weighted average and replacement problems.", "icon": "chart", "tier": 0, "prereqs": [], "diagnostic": true },
+      { "id": "quant.profit_loss", "name": "Profit & Loss", "description": "Cost price, selling price, discount and markup.", "icon": "coins", "tier": 1, "prereqs": ["quant.percentages"], "diagnostic": false },
+      { "id": "quant.time_work", "name": "Time & Work", "description": "Work rates, pipes and combined effort.", "icon": "clock", "tier": 1, "prereqs": ["quant.ratio"], "diagnostic": false },
+      { "id": "quant.interest", "name": "Simple & Compound Interest", "description": "SI, CI and the difference between them.", "icon": "bank", "tier": 2, "prereqs": ["quant.profit_loss"], "diagnostic": false }
+    ]
+  },
+  {
+    "id": "java-oop",
+    "name": "Java Citadel",
+    "world": "Skills",
+    "subject": "Java · Object-Oriented Programming",
+    "description": "From classes to polymorphism, the way interviews test it.",
+    "icon": "code",
+    "recommendedFor": ["coding", "college", "career"],
+    "topics": [
+      { "id": "java.basics", "name": "Java Basics", "description": "Types, operators, loops and control flow.", "icon": "code", "tier": 0, "prereqs": [], "diagnostic": true },
+      { "id": "java.classes", "name": "Classes & Objects", "description": "Fields, methods, constructors and references.", "icon": "box", "tier": 0, "prereqs": [], "diagnostic": true },
+      { "id": "java.encapsulation", "name": "Encapsulation", "description": "Access modifiers, getters and setters, immutability.", "icon": "lock", "tier": 0, "prereqs": [], "diagnostic": true },
+      { "id": "java.inheritance", "name": "Inheritance", "description": "extends, super, constructor chaining and overriding.", "icon": "layers", "tier": 1, "prereqs": ["java.classes"], "diagnostic": false },
+      { "id": "java.polymorphism", "name": "Polymorphism", "description": "Dynamic dispatch, overloading and casting.", "icon": "shapes", "tier": 2, "prereqs": ["java.inheritance"], "diagnostic": false },
+      { "id": "java.interfaces", "name": "Interfaces & Abstraction", "description": "Abstract classes, interfaces and default methods.", "icon": "puzzle", "tier": 2, "prereqs": ["java.inheritance"], "diagnostic": false }
+    ]
+  }
+]

@@ -1,0 +1,137 @@
+name: Release APK
+
+# Builds a release-signed APK and publishes it as a GitHub Release.
+#   Tag:     git tag v1.2.0 && git push origin v1.2.0
+#   Manual:  Actions → Release APK → Run workflow → version 1.2.0
+#
+# Repository secrets (Settings → Secrets and variables → Actions):
+#   ANDROID_KEYSTORE_BASE64    base64 of the release .jks
+#   ANDROID_KEYSTORE_PASSWORD  keystore password
+#   ANDROID_KEY_ALIAS          key alias (masteria)
+#   ANDROID_KEY_PASSWORD       key password
+#   GOOGLE_SERVICES_JSON       contents of android/app/google-services.json (raw JSON or base64)
+# Repository variable:
+#   BACKEND_URL                e.g. https://masteria-backend.onrender.com
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version name, e.g. 1.2.0 (creates tag v1.2.0)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  backend-tests:
+    name: Backend tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+      - working-directory: backend
+        run: chmod +x gradlew && ./gradlew test --no-daemon
+
+  apk:
+    name: Signed release APK
+    needs: backend-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Version
+        id: v
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then V="${{ inputs.version }}"; else V="${GITHUB_REF_NAME}"; fi
+          V="${V#v}"
+          if ! [[ "$V" =~ ^[0-9]+\.[0-9]+\.[0-9]+([.-][0-9A-Za-z.-]+)?$ ]]; then echo "::error::Version '$V' is not like 1.2.0"; exit 1; fi
+          echo "name=$V" >> "$GITHUB_OUTPUT"
+          echo "tag=v$V" >> "$GITHUB_OUTPUT"
+          echo "code=$(( 100 + ${{ github.run_number }} ))" >> "$GITHUB_OUTPUT"
+
+      - name: Check secrets
+        shell: bash
+        env:
+          KS: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KSP: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KA: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KP: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          GS: ${{ secrets.GOOGLE_SERVICES_JSON }}
+          URL: ${{ vars.BACKEND_URL }}
+        run: |
+          missing=""
+          for n in KS KSP KA KP GS; do [ -n "${!n}" ] || missing="$missing $n"; done
+          if [ -n "$missing" ]; then echo "::error::Missing release secrets (see the header of release.yml):$missing"; exit 1; fi
+          [ -n "$URL" ] || echo "::warning::BACKEND_URL variable not set; the APK will default to http://10.0.2.2:8080 (emulator only)."
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: android-actions/setup-android@v3
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Write signing key, Firebase config and local.properties
+        shell: bash
+        env:
+          KS: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          GS: ${{ secrets.GOOGLE_SERVICES_JSON }}
+          URL: ${{ vars.BACKEND_URL }}
+        run: |
+          echo "$KS" | base64 --decode > "$RUNNER_TEMP/release.jks"
+          if echo "$GS" | head -c 1 | grep -q '{'; then printf '%s' "$GS" > android/app/google-services.json
+          else echo "$GS" | base64 --decode > android/app/google-services.json; fi
+          python3 -c "import json;json.load(open('android/app/google-services.json'))"
+          {
+            echo "sdk.dir=$ANDROID_HOME"
+            [ -n "$URL" ] && echo "BACKEND_URL=$URL"
+          } > android/local.properties
+
+      - name: Build release APK
+        working-directory: android
+        env:
+          VERSION_NAME: ${{ steps.v.outputs.name }}
+          VERSION_CODE: ${{ steps.v.outputs.code }}
+          ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/release.jks
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: chmod +x gradlew && ./gradlew assembleRelease --no-daemon
+
+      - name: Verify signature and package
+        id: apk
+        shell: bash
+        run: |
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          SIGNER=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)apksigner
+          "$SIGNER" verify --verbose --print-certs "$APK" | tee signer.txt
+          if grep -q "CN=Android Debug" signer.txt; then echo "::error::APK is signed with the DEBUG key"; exit 1; fi
+          OUT="masteria-${{ steps.v.outputs.tag }}.apk"
+          mv "$APK" "$OUT"
+          sha256sum "$OUT" > "$OUT.sha256"
+          echo "file=$OUT" >> "$GITHUB_OUTPUT"
+          rm -f "$RUNNER_TEMP/release.jks" android/app/google-services.json
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.v.outputs.tag }}
+          name: Masteria ${{ steps.v.outputs.tag }}
+          target_commitish: ${{ github.sha }}
+          generate_release_notes: true
+          files: |
+            ${{ steps.apk.outputs.file }}
+            ${{ steps.apk.outputs.file }}.sha256

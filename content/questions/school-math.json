@@ -1,0 +1,992 @@
+[
+  {
+    "id": "math.integers.q01",
+    "topicId": "math.integers",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What is (-7) + 12?",
+    "options": [
+      "-19",
+      "-5",
+      "19",
+      "5"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Moving 12 steps right from -7 on the number line lands on 5, so (-7) + 12 = 5.",
+    "hint": "Think of starting at -7 on a number line and moving right.",
+    "code": null
+  },
+  {
+    "id": "math.integers.q02",
+    "topicId": "math.integers",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Which number is greater: -3 or -8?",
+    "options": [
+      "-8",
+      "Both are equal",
+      "-3",
+      "Cannot be compared"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "On the number line -3 is to the right of -8, so -3 is greater.",
+    "hint": "For negative numbers, the one closer to zero is bigger.",
+    "code": null
+  },
+  {
+    "id": "math.integers.q03",
+    "topicId": "math.integers",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "Find (-6) × (-4).",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "24",
+    "explanation": "The product of two negative numbers is positive, so (-6) × (-4) = 24.",
+    "hint": "Recall the sign rule for multiplying two negatives.",
+    "code": null
+  },
+  {
+    "id": "math.integers.q04",
+    "topicId": "math.integers",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Evaluate 15 - (-9).",
+    "options": [
+      "6",
+      "24",
+      "-6",
+      "-24"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Subtracting a negative is the same as adding, so 15 - (-9) = 15 + 9 = 24.",
+    "hint": "Change 'minus a negative' into 'plus'.",
+    "code": null
+  },
+  {
+    "id": "math.integers.q05",
+    "topicId": "math.integers",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Evaluate 8 - 3 × (-2) + 4.",
+    "options": [
+      "18",
+      "6",
+      "-6",
+      "14"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Multiply first: 3 × (-2) = -6. Then 8 - (-6) + 4 = 8 + 6 + 4 = 18.",
+    "hint": "Do the multiplication before adding or subtracting.",
+    "code": null
+  },
+  {
+    "id": "math.integers.q06",
+    "topicId": "math.integers",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "Evaluate (-48) ÷ 6 × (-2).",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "16",
+    "explanation": "Work left to right: (-48) ÷ 6 = -8, then (-8) × (-2) = 16.",
+    "hint": "Division and multiplication have equal priority, so go left to right.",
+    "code": null
+  },
+  {
+    "id": "math.integers.q07",
+    "topicId": "math.integers",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "At 6 am the temperature in Shimla was -5°C. By noon it rose by 12°C. What was the temperature at noon?",
+    "options": [
+      "-17°C",
+      "17°C",
+      "7°C",
+      "-7°C"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "A rise means adding: -5 + 12 = 7, so it was 7°C.",
+    "hint": "A rise in temperature means you add to the starting value.",
+    "code": null
+  },
+  {
+    "id": "math.integers.q08",
+    "topicId": "math.integers",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Evaluate (-2)³ - (-3)².",
+    "options": [
+      "-17",
+      "1",
+      "-1",
+      "17"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "(-2)³ = -8 and (-3)² = 9, so -8 - 9 = -17.",
+    "hint": "Work out each power separately and watch the signs: an odd power of a negative stays negative.",
+    "code": null
+  },
+  {
+    "id": "math.integers.q09",
+    "topicId": "math.integers",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "Find the sum of all integers from -10 to 12, including both.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "23",
+    "explanation": "The integers -10 to 10 cancel out in pairs to 0, leaving 11 + 12 = 23.",
+    "hint": "Pair each negative number with its positive partner.",
+    "code": null
+  },
+  {
+    "id": "math.integers.q10",
+    "topicId": "math.integers",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "A submarine is at -120 m (below sea level). It rises 45 m, then dives 30 m. Where is it now?",
+    "options": [
+      "-195 m",
+      "-45 m",
+      "-135 m",
+      "-105 m"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Rising adds and diving subtracts: -120 + 45 - 30 = -105 m.",
+    "hint": "Decide which moves add and which subtract, then work step by step.",
+    "code": null
+  },
+  {
+    "id": "math.fractions.q01",
+    "topicId": "math.fractions",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Which fraction is equal to 3/4?",
+    "options": [
+      "9/16",
+      "6/8",
+      "3/8",
+      "4/6"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Multiply the top and bottom of 3/4 by 2 to get 6/8.",
+    "hint": "Multiply the numerator and denominator by the same number.",
+    "code": null
+  },
+  {
+    "id": "math.fractions.q02",
+    "topicId": "math.fractions",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Find 2/5 + 1/5.",
+    "options": [
+      "3/5",
+      "3/10",
+      "2/25",
+      "1/5"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "The denominators are the same, so add the numerators: 2 + 1 = 3, giving 3/5.",
+    "hint": "When denominators are equal, only the numerators are added.",
+    "code": null
+  },
+  {
+    "id": "math.fractions.q03",
+    "topicId": "math.fractions",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "Write 3/4 as a decimal.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "0.75",
+    "explanation": "3 ÷ 4 = 0.75.",
+    "hint": "Divide the numerator by the denominator.",
+    "code": null
+  },
+  {
+    "id": "math.fractions.q04",
+    "topicId": "math.fractions",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Write 18/24 in its lowest terms.",
+    "options": [
+      "9/12",
+      "3/4",
+      "2/3",
+      "6/8"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "The HCF of 18 and 24 is 6. Dividing both by 6 gives 3/4.",
+    "hint": "Divide the top and bottom by their highest common factor.",
+    "code": null
+  },
+  {
+    "id": "math.fractions.q05",
+    "topicId": "math.fractions",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Find 2/3 + 3/4.",
+    "options": [
+      "5/7",
+      "5/12",
+      "17/12",
+      "6/7"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "The LCM of 3 and 4 is 12: 8/12 + 9/12 = 17/12.",
+    "hint": "Make the denominators equal before adding.",
+    "code": null
+  },
+  {
+    "id": "math.fractions.q06",
+    "topicId": "math.fractions",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "What is 2/3 of 45?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "30",
+    "explanation": "2/3 of 45 = 45 ÷ 3 × 2 = 15 × 2 = 30.",
+    "hint": "'Of' means multiply. Divide by the denominator first.",
+    "code": null
+  },
+  {
+    "id": "math.fractions.q07",
+    "topicId": "math.fractions",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Find (5/6) ÷ (10/9).",
+    "options": [
+      "25/27",
+      "4/3",
+      "1/2",
+      "3/4"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Multiply by the reciprocal: 5/6 × 9/10 = 45/60 = 3/4.",
+    "hint": "Dividing by a fraction is the same as multiplying by its reciprocal.",
+    "code": null
+  },
+  {
+    "id": "math.fractions.q08",
+    "topicId": "math.fractions",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Which is the largest: 5/8, 7/12, 2/3 or 3/5?",
+    "options": [
+      "2/3",
+      "5/8",
+      "7/12",
+      "3/5"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "As decimals: 5/8 = 0.625, 7/12 ≈ 0.583, 2/3 ≈ 0.667, 3/5 = 0.6. So 2/3 is largest.",
+    "hint": "Convert them to decimals or to a common denominator, then compare.",
+    "code": null
+  },
+  {
+    "id": "math.fractions.q09",
+    "topicId": "math.fractions",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "Riya spent 1/3 of her money on books and 1/4 on food. She has ₹150 left. How much money did she have at first? Give your answer in ₹.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "360",
+    "explanation": "She spent 1/3 + 1/4 = 7/12, so 5/12 is left. 5/12 of the money = 150, so the money = 150 × 12 ÷ 5 = ₹360.",
+    "hint": "First find what fraction of her money is left.",
+    "code": null
+  },
+  {
+    "id": "math.fractions.q10",
+    "topicId": "math.fractions",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Write 0.444... (the 4 repeats forever) as a fraction p/q.",
+    "options": [
+      "4/10",
+      "4/9",
+      "4/99",
+      "44/100"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Let x = 0.444... Then 10x = 4.444..., so 10x - x = 4 and x = 4/9.",
+    "hint": "Let x be the number and multiply by 10 to shift the repeating part.",
+    "code": null
+  },
+  {
+    "id": "math.linear_equations.q01",
+    "topicId": "math.linear_equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Solve for x: 3x + 5 = 20",
+    "options": [
+      "3",
+      "15",
+      "25/3",
+      "5"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Subtract 5 from both sides to get 3x = 15, then divide by 3 to get x = 5.",
+    "hint": "First isolate the term with x.",
+    "code": null
+  },
+  {
+    "id": "math.linear_equations.q02",
+    "topicId": "math.linear_equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Solve for x: x - 7 = 12",
+    "options": [
+      "5",
+      "-19",
+      "19",
+      "84"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Add 7 to both sides: x = 12 + 7 = 19.",
+    "hint": "Undo the subtraction by doing the opposite operation.",
+    "code": null
+  },
+  {
+    "id": "math.linear_equations.q03",
+    "topicId": "math.linear_equations",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "Solve for x: 4x = 36",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "9",
+    "explanation": "Divide both sides by 4: x = 36 ÷ 4 = 9.",
+    "hint": "x is multiplied by 4. Undo it.",
+    "code": null
+  },
+  {
+    "id": "math.linear_equations.q04",
+    "topicId": "math.linear_equations",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Solve for x: x/5 = 3",
+    "options": [
+      "3/5",
+      "8",
+      "5/3",
+      "15"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Multiply both sides by 5: x = 3 × 5 = 15.",
+    "hint": "x is divided by 5. Do the opposite to both sides.",
+    "code": null
+  },
+  {
+    "id": "math.linear_equations.q05",
+    "topicId": "math.linear_equations",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Solve for x: 5x - 3 = 2x + 12",
+    "options": [
+      "5",
+      "3",
+      "9/7",
+      "15"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Move x terms to one side: 5x - 2x = 12 + 3, so 3x = 15 and x = 5.",
+    "hint": "Collect the x terms on one side and the numbers on the other.",
+    "code": null
+  },
+  {
+    "id": "math.linear_equations.q06",
+    "topicId": "math.linear_equations",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "Solve for x: 2(x - 3) = 14",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "10",
+    "explanation": "Divide both sides by 2: x - 3 = 7, so x = 10.",
+    "hint": "You can divide both sides by 2 first, or open the bracket.",
+    "code": null
+  },
+  {
+    "id": "math.linear_equations.q07",
+    "topicId": "math.linear_equations",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "The sum of three consecutive integers is 51. What is the smallest of them?",
+    "options": [
+      "17",
+      "16",
+      "15",
+      "18"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Let them be n, n + 1, n + 2. Then 3n + 3 = 51, so n = 16.",
+    "hint": "Call the smallest n and write the other two in terms of n.",
+    "code": null
+  },
+  {
+    "id": "math.linear_equations.q08",
+    "topicId": "math.linear_equations",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Solve for x: (x + 1)/3 - (x - 1)/4 = 1",
+    "options": [
+      "11",
+      "-5",
+      "5",
+      "1"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Multiply by 12: 4(x + 1) - 3(x - 1) = 12, so 4x + 4 - 3x + 3 = 12, giving x + 7 = 12 and x = 5.",
+    "hint": "Multiply every term by the LCM of 3 and 4. Be careful with the minus sign before the bracket.",
+    "code": null
+  },
+  {
+    "id": "math.linear_equations.q09",
+    "topicId": "math.linear_equations",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "Aman's father is 3 times as old as Aman. In 12 years, the father will be twice as old as Aman. How old is Aman now (in years)?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "12",
+    "explanation": "Let Aman be a years old. Then 3a + 12 = 2(a + 12), so 3a + 12 = 2a + 24 and a = 12.",
+    "hint": "Write both ages after 12 years in terms of Aman's present age.",
+    "code": null
+  },
+  {
+    "id": "math.linear_equations.q10",
+    "topicId": "math.linear_equations",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "The length of a rectangle is 4 cm more than its width. Its perimeter is 48 cm. What is its width?",
+    "options": [
+      "14 cm",
+      "12 cm",
+      "22 cm",
+      "10 cm"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Perimeter = 2(w + w + 4) = 48, so 2w + 4 = 24 and w = 10 cm.",
+    "hint": "Perimeter = 2 × (length + width). Write the length in terms of the width.",
+    "code": null
+  },
+  {
+    "id": "math.geometry.q01",
+    "topicId": "math.geometry",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What is the complement of 35°?",
+    "options": [
+      "55°",
+      "145°",
+      "65°",
+      "325°"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Complementary angles add up to 90°, so 90° - 35° = 55°.",
+    "hint": "Complementary angles add up to a right angle.",
+    "code": null
+  },
+  {
+    "id": "math.geometry.q02",
+    "topicId": "math.geometry",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What is the supplement of 110°?",
+    "options": [
+      "20°",
+      "250°",
+      "70°",
+      "90°"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Supplementary angles add up to 180°, so 180° - 110° = 70°.",
+    "hint": "Supplementary angles add up to a straight angle.",
+    "code": null
+  },
+  {
+    "id": "math.geometry.q03",
+    "topicId": "math.geometry",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "Two angles form a linear pair. One of them is 65°. Find the other angle in degrees.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "115",
+    "explanation": "Angles in a linear pair add up to 180°, so the other is 180 - 65 = 115°.",
+    "hint": "A linear pair lies on a straight line.",
+    "code": null
+  },
+  {
+    "id": "math.geometry.q04",
+    "topicId": "math.geometry",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "When two lines intersect, the vertically opposite angles are always:",
+    "options": [
+      "supplementary",
+      "equal",
+      "complementary",
+      "adjacent"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Each angle and its vertically opposite angle form linear pairs with the same angle, so they are equal.",
+    "hint": "Picture the X made by two crossing lines and compare the angles facing each other.",
+    "code": null
+  },
+  {
+    "id": "math.geometry.q05",
+    "topicId": "math.geometry",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Two supplementary angles are in the ratio 2 : 3. What is the larger angle?",
+    "options": [
+      "72°",
+      "108°",
+      "54°",
+      "36°"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Total 180° split in 2 : 3 gives parts of 36°, so the angles are 72° and 108°.",
+    "hint": "Supplementary angles add to 180°. Split 180° in the given ratio.",
+    "code": null
+  },
+  {
+    "id": "math.geometry.q06",
+    "topicId": "math.geometry",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "An angle is 20° more than its complement. Find the angle in degrees.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "55",
+    "explanation": "Let the angle be x. Its complement is 90 - x, so x = (90 - x) + 20, giving 2x = 110 and x = 55°.",
+    "hint": "Write the complement as 90 - x and form an equation.",
+    "code": null
+  },
+  {
+    "id": "math.geometry.q07",
+    "topicId": "math.geometry",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Two parallel lines are cut by a transversal. One co-interior angle (interior angle on the same side) is 72°. What is the other?",
+    "options": [
+      "108°",
+      "72°",
+      "18°",
+      "288°"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Co-interior angles on the same side of a transversal add up to 180°, so 180° - 72° = 108°.",
+    "hint": "Recall what co-interior angles between parallel lines add up to.",
+    "code": null
+  },
+  {
+    "id": "math.geometry.q08",
+    "topicId": "math.geometry",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Lines AB and CD intersect at O. If ∠AOC = (3x + 10)° and ∠BOD = (5x - 30)°, find ∠AOC.",
+    "options": [
+      "20°",
+      "110°",
+      "70°",
+      "50°"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "∠AOC and ∠BOD are vertically opposite, so 3x + 10 = 5x - 30, giving x = 20 and ∠AOC = 70°.",
+    "hint": "Which pair of angles do ∠AOC and ∠BOD form? What does that tell you?",
+    "code": null
+  },
+  {
+    "id": "math.geometry.q09",
+    "topicId": "math.geometry",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "Two parallel lines are cut by a transversal. Two co-interior angles are (2x + 20)° and (3x - 40)°. Find the larger angle in degrees.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "100",
+    "explanation": "Co-interior angles add to 180°: 5x - 20 = 180, so x = 40. The angles are 100° and 80°.",
+    "hint": "Add the two expressions and use the co-interior angle rule. Then substitute x back.",
+    "code": null
+  },
+  {
+    "id": "math.geometry.q10",
+    "topicId": "math.geometry",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "The supplement of an angle is 4 times its complement. Find the angle.",
+    "options": [
+      "30°",
+      "45°",
+      "36°",
+      "60°"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "180 - x = 4(90 - x) gives 180 - x = 360 - 4x, so 3x = 180 and x = 60°.",
+    "hint": "Write both the supplement and the complement in terms of x.",
+    "code": null
+  },
+  {
+    "id": "math.probability.q01",
+    "topicId": "math.probability",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "A fair coin is tossed once. What is the probability of getting a head?",
+    "options": [
+      "1/4",
+      "1/2",
+      "1",
+      "0"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "There are 2 equally likely outcomes and 1 of them is a head, so P = 1/2.",
+    "hint": "Count favourable outcomes and total outcomes.",
+    "code": null
+  },
+  {
+    "id": "math.probability.q02",
+    "topicId": "math.probability",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "A fair die is rolled. What is the probability of getting a 4?",
+    "options": [
+      "4/6",
+      "1/4",
+      "1/6",
+      "1/2"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Only one face out of six shows 4, so P = 1/6.",
+    "hint": "How many faces does a die have, and how many show 4?",
+    "code": null
+  },
+  {
+    "id": "math.probability.q03",
+    "topicId": "math.probability",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "A bag has 3 red balls and 5 blue balls. One ball is picked at random. What is the probability that it is blue? Give your answer as a decimal.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "0.625",
+    "explanation": "There are 8 balls and 5 are blue, so P = 5/8 = 0.625.",
+    "hint": "Probability = favourable outcomes ÷ total outcomes.",
+    "code": null
+  },
+  {
+    "id": "math.probability.q04",
+    "topicId": "math.probability",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What is the probability of an impossible event?",
+    "options": [
+      "0",
+      "1",
+      "0.5",
+      "-1"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "An impossible event can never happen, so its probability is 0.",
+    "hint": "Probability always lies between 0 and 1.",
+    "code": null
+  },
+  {
+    "id": "math.probability.q05",
+    "topicId": "math.probability",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "A fair die is rolled. What is the probability of getting a number greater than 4?",
+    "options": [
+      "1/2",
+      "2/3",
+      "1/6",
+      "1/3"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Only 5 and 6 are greater than 4, so P = 2/6 = 1/3.",
+    "hint": "List the numbers on the die that are greater than 4.",
+    "code": null
+  },
+  {
+    "id": "math.probability.q06",
+    "topicId": "math.probability",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "If the probability of an event E is 0.35, what is the probability of E not happening?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "0.65",
+    "explanation": "P(not E) = 1 - P(E) = 1 - 0.35 = 0.65.",
+    "hint": "An event and its complement together have probability 1.",
+    "code": null
+  },
+  {
+    "id": "math.probability.q07",
+    "topicId": "math.probability",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Two fair coins are tossed together. What is the probability of getting exactly one head?",
+    "options": [
+      "1/4",
+      "1/3",
+      "3/4",
+      "1/2"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "The outcomes are HH, HT, TH, TT. Exactly one head happens in HT and TH, so P = 2/4 = 1/2.",
+    "hint": "Write all outcomes. Remember HT and TH are different.",
+    "code": null
+  },
+  {
+    "id": "math.probability.q08",
+    "topicId": "math.probability",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "A number is chosen at random from 1 to 20. What is the probability that it is a prime number?",
+    "options": [
+      "9/20",
+      "1/2",
+      "2/5",
+      "7/20"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "The primes are 2, 3, 5, 7, 11, 13, 17, 19, which is 8 numbers. P = 8/20 = 2/5.",
+    "hint": "List the primes up to 20 carefully. Is 1 a prime? Is 2?",
+    "code": null
+  },
+  {
+    "id": "math.probability.q09",
+    "topicId": "math.probability",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "A bag has 4 red, 6 green and some blue balls. The probability of picking a green ball is 1/3. How many blue balls are there?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "8",
+    "explanation": "6 green out of the total is 1/3, so the total is 18. Blue = 18 - 4 - 6 = 8.",
+    "hint": "Use the green probability to find the total number of balls first.",
+    "code": null
+  },
+  {
+    "id": "math.probability.q10",
+    "topicId": "math.probability",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Two fair dice are thrown together. What is the probability that the sum is 7?",
+    "options": [
+      "1/6",
+      "7/36",
+      "1/12",
+      "1/11"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "There are 36 outcomes. Sum 7 comes from (1,6), (2,5), (3,4), (4,3), (5,2), (6,1): 6 ways, so P = 6/36 = 1/6.",
+    "hint": "There are 6 × 6 outcomes. List the pairs that add up to 7.",
+    "code": null
+  },
+  {
+    "id": "math.triangles.q01",
+    "topicId": "math.triangles",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Two angles of a triangle are 50° and 60°. What is the third angle?",
+    "options": [
+      "110°",
+      "70°",
+      "80°",
+      "250°"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "The angles of a triangle add up to 180°, so 180 - 50 - 60 = 70°.",
+    "hint": "Use the angle sum property of a triangle.",
+    "code": null
+  },
+  {
+    "id": "math.triangles.q02",
+    "topicId": "math.triangles",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "The two shorter sides of a right triangle are 3 cm and 4 cm. What is the hypotenuse?",
+    "options": [
+      "7 cm",
+      "12 cm",
+      "5 cm",
+      "25 cm"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "By Pythagoras, hypotenuse² = 3² + 4² = 9 + 16 = 25, so the hypotenuse is 5 cm.",
+    "hint": "Use Pythagoras theorem, and remember to take the square root.",
+    "code": null
+  },
+  {
+    "id": "math.triangles.q03",
+    "topicId": "math.triangles",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "Find the area of a triangle with base 10 cm and height 6 cm, in cm².",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "30",
+    "explanation": "Area = 1/2 × base × height = 1/2 × 10 × 6 = 30 cm².",
+    "hint": "The area of a triangle is half of base times height.",
+    "code": null
+  },
+  {
+    "id": "math.triangles.q04",
+    "topicId": "math.triangles",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Each angle of an equilateral triangle measures:",
+    "options": [
+      "60°",
+      "90°",
+      "45°",
+      "120°"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "All three angles are equal and add to 180°, so each is 180 ÷ 3 = 60°.",
+    "hint": "All three angles are equal. What must they add up to?",
+    "code": null
+  },
+  {
+    "id": "math.triangles.q05",
+    "topicId": "math.triangles",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "An exterior angle of a triangle is 120°. One of the interior opposite angles is 45°. What is the other interior opposite angle?",
+    "options": [
+      "60°",
+      "135°",
+      "15°",
+      "75°"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "An exterior angle equals the sum of the two interior opposite angles, so 120 - 45 = 75°.",
+    "hint": "Recall the exterior angle property of a triangle.",
+    "code": null
+  },
+  {
+    "id": "math.triangles.q06",
+    "topicId": "math.triangles",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "The hypotenuse of a right triangle is 13 cm and one side is 5 cm. Find the other side in cm.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "12",
+    "explanation": "Other side² = 13² - 5² = 169 - 25 = 144, so the other side is 12 cm.",
+    "hint": "Rearrange Pythagoras theorem to find a shorter side.",
+    "code": null
+  },
+  {
+    "id": "math.triangles.q07",
+    "topicId": "math.triangles",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Which set of lengths can form a triangle?",
+    "options": [
+      "2, 3, 6",
+      "5, 6, 10",
+      "3, 4, 8",
+      "1, 2, 3"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "The sum of any two sides must be greater than the third. Only 5 + 6 = 11 > 10 works; 1 + 2 = 3 is not greater than 3.",
+    "hint": "Check if the two shorter sides together are longer than the longest side.",
+    "code": null
+  },
+  {
+    "id": "math.triangles.q08",
+    "topicId": "math.triangles",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Find the area of a triangle with sides 13 cm, 14 cm and 15 cm.",
+    "options": [
+      "91 cm²",
+      "105 cm²",
+      "42 cm²",
+      "84 cm²"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "By Heron's formula, s = 21 and area = √(21 × 8 × 7 × 6) = √7056 = 84 cm².",
+    "hint": "Use Heron's formula. Start with the semi-perimeter s.",
+    "code": null
+  },
+  {
+    "id": "math.triangles.q09",
+    "topicId": "math.triangles",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "The angles of a triangle are in the ratio 2 : 3 : 4. Find the largest angle in degrees.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "80",
+    "explanation": "2 + 3 + 4 = 9 parts make 180°, so one part is 20° and the largest angle is 4 × 20 = 80°.",
+    "hint": "The three angles add to 180°. Split 180° in the given ratio.",
+    "code": null
+  },
+  {
+    "id": "math.triangles.q10",
+    "topicId": "math.triangles",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "An isosceles right triangle has hypotenuse 10√2 cm. What is its area?",
+    "options": [
+      "50 cm²",
+      "100 cm²",
+      "50√2 cm²",
+      "25 cm²"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Equal legs a satisfy 2a² = (10√2)² = 200, so a = 10 cm and area = 1/2 × 10 × 10 = 50 cm².",
+    "hint": "The two legs are equal. Use Pythagoras to find a leg first.",
+    "code": null
+  }
+]

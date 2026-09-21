@@ -1,0 +1,365 @@
+[
+ {
+  "id": "t.a.q01",
+  "topicId": "t.a",
+  "type": "mcq",
+  "difficulty": 1,
+  "question": "t.a question 1 (d1)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 1,
+  "answerText": null,
+  "explanation": "Because option 1.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.a.q02",
+  "topicId": "t.a",
+  "type": "numeric",
+  "difficulty": 1,
+  "question": "t.a numeric 2: what is 10/4?",
+  "options": [],
+  "answerIndex": null,
+  "answerText": "2.5",
+  "explanation": "10 divided by 4 is 2.5.",
+  "hint": "Divide.",
+  "code": null
+ },
+ {
+  "id": "t.a.q03",
+  "topicId": "t.a",
+  "type": "mcq",
+  "difficulty": 2,
+  "question": "t.a question 3 (d2)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 3,
+  "answerText": null,
+  "explanation": "Because option 3.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.a.q04",
+  "topicId": "t.a",
+  "type": "mcq",
+  "difficulty": 2,
+  "question": "t.a question 4 (d2)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 0,
+  "answerText": null,
+  "explanation": "Because option 0.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.a.q05",
+  "topicId": "t.a",
+  "type": "mcq",
+  "difficulty": 3,
+  "question": "t.a question 5 (d3)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 1,
+  "answerText": null,
+  "explanation": "Because option 1.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.a.q06",
+  "topicId": "t.a",
+  "type": "mcq",
+  "difficulty": 3,
+  "question": "t.a question 6 (d3)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 2,
+  "answerText": null,
+  "explanation": "Because option 2.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.a.q07",
+  "topicId": "t.a",
+  "type": "mcq",
+  "difficulty": 3,
+  "question": "t.a question 7 (d3)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 3,
+  "answerText": null,
+  "explanation": "Because option 3.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.b.q01",
+  "topicId": "t.b",
+  "type": "mcq",
+  "difficulty": 1,
+  "question": "t.b question 1 (d1)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 1,
+  "answerText": null,
+  "explanation": "Because option 1.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.b.q02",
+  "topicId": "t.b",
+  "type": "numeric",
+  "difficulty": 1,
+  "question": "t.b numeric 2: what is 10/4?",
+  "options": [],
+  "answerIndex": null,
+  "answerText": "2.5",
+  "explanation": "10 divided by 4 is 2.5.",
+  "hint": "Divide.",
+  "code": null
+ },
+ {
+  "id": "t.b.q03",
+  "topicId": "t.b",
+  "type": "mcq",
+  "difficulty": 2,
+  "question": "t.b question 3 (d2)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 3,
+  "answerText": null,
+  "explanation": "Because option 3.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.b.q04",
+  "topicId": "t.b",
+  "type": "mcq",
+  "difficulty": 2,
+  "question": "t.b question 4 (d2)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 0,
+  "answerText": null,
+  "explanation": "Because option 0.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.b.q05",
+  "topicId": "t.b",
+  "type": "mcq",
+  "difficulty": 3,
+  "question": "t.b question 5 (d3)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 1,
+  "answerText": null,
+  "explanation": "Because option 1.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.b.q06",
+  "topicId": "t.b",
+  "type": "mcq",
+  "difficulty": 3,
+  "question": "t.b question 6 (d3)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 2,
+  "answerText": null,
+  "explanation": "Because option 2.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.b.q07",
+  "topicId": "t.b",
+  "type": "mcq",
+  "difficulty": 3,
+  "question": "t.b question 7 (d3)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 3,
+  "answerText": null,
+  "explanation": "Because option 3.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.c.q01",
+  "topicId": "t.c",
+  "type": "mcq",
+  "difficulty": 1,
+  "question": "t.c question 1 (d1)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 1,
+  "answerText": null,
+  "explanation": "Because option 1.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.c.q02",
+  "topicId": "t.c",
+  "type": "numeric",
+  "difficulty": 1,
+  "question": "t.c numeric 2: what is 10/4?",
+  "options": [],
+  "answerIndex": null,
+  "answerText": "2.5",
+  "explanation": "10 divided by 4 is 2.5.",
+  "hint": "Divide.",
+  "code": null
+ },
+ {
+  "id": "t.c.q03",
+  "topicId": "t.c",
+  "type": "mcq",
+  "difficulty": 2,
+  "question": "t.c question 3 (d2)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 3,
+  "answerText": null,
+  "explanation": "Because option 3.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.c.q04",
+  "topicId": "t.c",
+  "type": "mcq",
+  "difficulty": 2,
+  "question": "t.c question 4 (d2)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 0,
+  "answerText": null,
+  "explanation": "Because option 0.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.c.q05",
+  "topicId": "t.c",
+  "type": "mcq",
+  "difficulty": 3,
+  "question": "t.c question 5 (d3)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 1,
+  "answerText": null,
+  "explanation": "Because option 1.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.c.q06",
+  "topicId": "t.c",
+  "type": "mcq",
+  "difficulty": 3,
+  "question": "t.c question 6 (d3)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 2,
+  "answerText": null,
+  "explanation": "Because option 2.",
+  "hint": "Think.",
+  "code": null
+ },
+ {
+  "id": "t.c.q07",
+  "topicId": "t.c",
+  "type": "mcq",
+  "difficulty": 3,
+  "question": "t.c question 7 (d3)",
+  "options": [
+   "w",
+   "x",
+   "y",
+   "z"
+  ],
+  "answerIndex": 3,
+  "answerText": null,
+  "explanation": "Because option 3.",
+  "hint": "Think.",
+  "code": null
+ }
+]

@@ -1,0 +1,992 @@
+[
+  {
+    "id": "quant.percentages.q01",
+    "topicId": "quant.percentages",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What is 25% of 480?",
+    "options": [
+      "12",
+      "100",
+      "140",
+      "120"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "25% is one-fourth, so 480 ÷ 4 = 120.",
+    "hint": "25% is a simple fraction of the whole.",
+    "code": null
+  },
+  {
+    "id": "quant.percentages.q02",
+    "topicId": "quant.percentages",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "What percent of 80 is 20?",
+    "options": [
+      "25%",
+      "20%",
+      "40%",
+      "16%"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "(20 ÷ 80) × 100 = 25%.",
+    "hint": "Divide the part by the whole, then multiply by 100.",
+    "code": null
+  },
+  {
+    "id": "quant.percentages.q03",
+    "topicId": "quant.percentages",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "A number, when increased by 20%, becomes 360. Find the number.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "300",
+    "explanation": "1.2 × number = 360, so the number = 360 ÷ 1.2 = 300.",
+    "hint": "An increase of 20% means the new value is 120% of the original.",
+    "code": null
+  },
+  {
+    "id": "quant.percentages.q04",
+    "topicId": "quant.percentages",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Express 3/8 as a percentage.",
+    "options": [
+      "38%",
+      "37.5%",
+      "30%",
+      "3.75%"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "3/8 × 100 = 300/8 = 37.5%.",
+    "hint": "Multiply the fraction by 100.",
+    "code": null
+  },
+  {
+    "id": "quant.percentages.q05",
+    "topicId": "quant.percentages",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "The price of sugar rises by 25%. By what percent must a family reduce its consumption so that its expenditure on sugar stays the same?",
+    "options": [
+      "25%",
+      "22.5%",
+      "20%",
+      "15%"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Required reduction = 25/(100 + 25) × 100 = 20%.",
+    "hint": "Compare the rise with the NEW price, not the old one.",
+    "code": null
+  },
+  {
+    "id": "quant.percentages.q06",
+    "topicId": "quant.percentages",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "Two successive increases of 10% and 20% are equal to a single increase of what percent?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "32",
+    "explanation": "1.10 × 1.20 = 1.32, so the net increase is 32%. (Or 10 + 20 + 10×20/100 = 32.)",
+    "hint": "Successive percentage changes multiply; they do not simply add.",
+    "code": null
+  },
+  {
+    "id": "quant.percentages.q07",
+    "topicId": "quant.percentages",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "In an election between two candidates, the winner got 58% of the valid votes and won by 1,120 votes. Find the total number of valid votes.",
+    "options": [
+      "6,000",
+      "7,000",
+      "5,600",
+      "8,000"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "The loser got 42%, so the margin is 16% of the votes = 1,120. Total = 1,120 × 100 ÷ 16 = 7,000.",
+    "hint": "The winning margin is the difference between the two candidates' percentages.",
+    "code": null
+  },
+  {
+    "id": "quant.percentages.q08",
+    "topicId": "quant.percentages",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Ravi spends 75% of his income. His income increases by 20% and his expenditure increases by 10%. By what percent do his savings increase?",
+    "options": [
+      "10%",
+      "30%",
+      "50%",
+      "40%"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "On an income of ₹100, savings go from ₹25 to 120 - 82.50 = ₹37.50. That is a rise of 12.5/25 × 100 = 50%.",
+    "hint": "Assume the income is ₹100 and work out old and new savings.",
+    "code": null
+  },
+  {
+    "id": "quant.percentages.q09",
+    "topicId": "quant.percentages",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "In an exam, 35% of students failed in Hindi, 45% failed in English and 20% failed in both. What percent of students passed in both subjects?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "40",
+    "explanation": "Failed in at least one = 35 + 45 - 20 = 60%. Passed in both = 100 - 60 = 40%.",
+    "hint": "Find the percentage that failed in at least one subject first; don't count 'both' twice.",
+    "code": null
+  },
+  {
+    "id": "quant.percentages.q10",
+    "topicId": "quant.percentages",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "The population of a town is 1,50,000. It increases by 10% in the first year and decreases by 10% in the second year. What is the population after 2 years?",
+    "options": [
+      "1,50,000",
+      "1,51,500",
+      "1,47,000",
+      "1,48,500"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "1,50,000 × 1.1 × 0.9 = 1,48,500.",
+    "hint": "The 10% decrease applies to the increased population, not the original.",
+    "code": null
+  },
+  {
+    "id": "quant.ratio.q01",
+    "topicId": "quant.ratio",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Divide ₹720 between Anil and Sunil in the ratio 5 : 3. What is Anil's share?",
+    "options": [
+      "₹450",
+      "₹270",
+      "₹400",
+      "₹360"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Total parts = 8, so one part = 720 ÷ 8 = ₹90. Anil's share = 5 × 90 = ₹450.",
+    "hint": "Add the ratio terms to find the value of one part.",
+    "code": null
+  },
+  {
+    "id": "quant.ratio.q02",
+    "topicId": "quant.ratio",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Write the ratio 45 : 60 in its simplest form.",
+    "options": [
+      "9 : 12",
+      "4 : 3",
+      "3 : 4",
+      "15 : 20"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "The HCF of 45 and 60 is 15, so 45 : 60 = 3 : 4.",
+    "hint": "Divide both terms by their HCF.",
+    "code": null
+  },
+  {
+    "id": "quant.ratio.q03",
+    "topicId": "quant.ratio",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "Find the fourth proportional to 3, 5 and 12.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "20",
+    "explanation": "3 : 5 = 12 : x, so 3x = 60 and x = 20.",
+    "hint": "If a : b = c : d, then a × d = b × c.",
+    "code": null
+  },
+  {
+    "id": "quant.ratio.q04",
+    "topicId": "quant.ratio",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Find the mean proportional between 4 and 16.",
+    "options": [
+      "10",
+      "12",
+      "64",
+      "8"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Mean proportional = √(4 × 16) = √64 = 8.",
+    "hint": "The mean proportional x satisfies 4 : x = x : 16.",
+    "code": null
+  },
+  {
+    "id": "quant.ratio.q05",
+    "topicId": "quant.ratio",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "If A : B = 2 : 3 and B : C = 4 : 5, find A : C.",
+    "options": [
+      "8 : 15",
+      "2 : 5",
+      "6 : 5",
+      "10 : 12"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Make B equal: A : B = 8 : 12 and B : C = 12 : 15, so A : C = 8 : 15.",
+    "hint": "Make the common term B the same in both ratios.",
+    "code": null
+  },
+  {
+    "id": "quant.ratio.q06",
+    "topicId": "quant.ratio",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "Two numbers are in the ratio 3 : 5. If 9 is subtracted from each, the ratio becomes 12 : 23. Find the smaller number.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "33",
+    "explanation": "Let the numbers be 3k and 5k. 23(3k - 9) = 12(5k - 9) gives 69k - 207 = 60k - 108, so k = 11 and the smaller number is 33.",
+    "hint": "Write the numbers as 3k and 5k and cross-multiply.",
+    "code": null
+  },
+  {
+    "id": "quant.ratio.q07",
+    "topicId": "quant.ratio",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Meena and Farhan start a business with ₹40,000 and ₹60,000 for the same period. The profit is ₹15,000. What is Farhan's share?",
+    "options": [
+      "₹6,000",
+      "₹9,000",
+      "₹7,500",
+      "₹10,000"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Capital ratio = 40,000 : 60,000 = 2 : 3. Farhan's share = 3/5 × 15,000 = ₹9,000.",
+    "hint": "For the same time period, profit is shared in the ratio of capital.",
+    "code": null
+  },
+  {
+    "id": "quant.ratio.q08",
+    "topicId": "quant.ratio",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "A starts a business with ₹30,000. After 3 months, B joins with ₹40,000. At the end of the year the profit is ₹28,000. What is A's share?",
+    "options": [
+      "₹12,000",
+      "₹16,000",
+      "₹10,500",
+      "₹14,000"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "A : B = 30,000 × 12 : 40,000 × 9 = 3,60,000 : 3,60,000 = 1 : 1. So A gets ₹14,000.",
+    "hint": "Multiply each capital by the number of months it was invested.",
+    "code": null
+  },
+  {
+    "id": "quant.ratio.q09",
+    "topicId": "quant.ratio",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "A bag contains ₹1, 50 paise and 25 paise coins in the ratio 5 : 6 : 8. The total value is ₹210. How many 50 paise coins are there?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "126",
+    "explanation": "Values are in the ratio 5 × 1 : 6 × 0.5 : 8 × 0.25 = 5 : 3 : 2, so one set of coins is worth ₹10 and there are 21 sets. 50 paise coins = 6 × 21 = 126.",
+    "hint": "Convert the ratio of coin counts into a ratio of values first.",
+    "code": null
+  },
+  {
+    "id": "quant.ratio.q10",
+    "topicId": "quant.ratio",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "A 40-litre mixture has milk and water in the ratio 3 : 1. How much water must be added to make the ratio 3 : 2?",
+    "options": [
+      "5 litres",
+      "10 litres",
+      "20 litres",
+      "15 litres"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Milk = 30 L and water = 10 L. For 3 : 2, water must be 20 L, so add 10 L.",
+    "hint": "The amount of milk does not change. Find how much water it needs for the new ratio.",
+    "code": null
+  },
+  {
+    "id": "quant.averages.q01",
+    "topicId": "quant.averages",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Find the average of 12, 15, 18, 21 and 24.",
+    "options": [
+      "15",
+      "90",
+      "18",
+      "20"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Sum = 90 and there are 5 numbers, so the average = 90 ÷ 5 = 18.",
+    "hint": "Add the numbers and divide by how many there are.",
+    "code": null
+  },
+  {
+    "id": "quant.averages.q02",
+    "topicId": "quant.averages",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "Find the average of the first 10 natural numbers.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "5.5",
+    "explanation": "Sum = 10 × 11 ÷ 2 = 55, so the average = 55 ÷ 10 = 5.5.",
+    "hint": "The natural numbers start from 1. Use the formula for their sum.",
+    "code": null
+  },
+  {
+    "id": "quant.averages.q03",
+    "topicId": "quant.averages",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "The average of 5 numbers is 40. What is their sum?",
+    "options": [
+      "200",
+      "45",
+      "8",
+      "35"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Sum = average × count = 40 × 5 = 200.",
+    "hint": "Sum = average × number of items.",
+    "code": null
+  },
+  {
+    "id": "quant.averages.q04",
+    "topicId": "quant.averages",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "The average of 4 numbers is 25. If the number 40 is removed, what is the average of the remaining numbers?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "21.25"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Total = 100. After removing 40, the sum is 60 for 3 numbers, so the average = 20.",
+    "hint": "Find the total first, then remove the number.",
+    "code": null
+  },
+  {
+    "id": "quant.averages.q05",
+    "topicId": "quant.averages",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "The average weight of 8 persons increases by 2.5 kg when a new person replaces one who weighs 65 kg. What is the weight of the new person?",
+    "options": [
+      "67.5 kg",
+      "75 kg",
+      "80 kg",
+      "85 kg"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Total weight rises by 8 × 2.5 = 20 kg, so the new person weighs 65 + 20 = 85 kg.",
+    "hint": "The rise in average times the number of persons gives the rise in total weight.",
+    "code": null
+  },
+  {
+    "id": "quant.averages.q06",
+    "topicId": "quant.averages",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "The average age of 30 students is 15 years. When the teacher's age is included, the average increases by 1 year. What is the teacher's age in years?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "46",
+    "explanation": "New total = 31 × 16 = 496 and old total = 30 × 15 = 450. Teacher's age = 496 - 450 = 46 years.",
+    "hint": "Compare the total age before and after including the teacher.",
+    "code": null
+  },
+  {
+    "id": "quant.averages.q07",
+    "topicId": "quant.averages",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "A batsman has an average of 32 runs in 10 innings. How many runs must he score in the 11th innings to raise his average by 4?",
+    "options": [
+      "36",
+      "44",
+      "76",
+      "72"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Needed total = 11 × 36 = 396 and current total = 10 × 32 = 320. Runs needed = 396 - 320 = 76.",
+    "hint": "Work out the total needed for the new average over 11 innings.",
+    "code": null
+  },
+  {
+    "id": "quant.averages.q08",
+    "topicId": "quant.averages",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Section A has 40 students with an average of 60 marks. Section B has 60 students with an average of 70 marks. What is the average of all 100 students?",
+    "options": [
+      "66",
+      "65",
+      "64",
+      "68"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Total = 40 × 60 + 60 × 70 = 2,400 + 4,200 = 6,600. Average = 6,600 ÷ 100 = 66.",
+    "hint": "Use a weighted average; the sections are of different sizes.",
+    "code": null
+  },
+  {
+    "id": "quant.averages.q09",
+    "topicId": "quant.averages",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "The average of 11 results is 50. The average of the first six is 49 and of the last six is 52. Find the sixth result.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "56",
+    "explanation": "First six + last six = 294 + 312 = 606, which counts the sixth result twice. Sixth result = 606 - 550 = 56.",
+    "hint": "The sixth result is in both groups of six.",
+    "code": null
+  },
+  {
+    "id": "quant.averages.q10",
+    "topicId": "quant.averages",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "A car goes from Delhi to Agra at 60 km/h and returns by the same route at 40 km/h. What is its average speed for the whole journey?",
+    "options": [
+      "48 km/h",
+      "50 km/h",
+      "45 km/h",
+      "52 km/h"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "For equal distances, average speed = 2 × 60 × 40 ÷ (60 + 40) = 4,800 ÷ 100 = 48 km/h.",
+    "hint": "Average speed = total distance ÷ total time, not the average of the two speeds.",
+    "code": null
+  },
+  {
+    "id": "quant.profit_loss.q01",
+    "topicId": "quant.profit_loss",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "A shopkeeper buys a fan for ₹500 and sells it for ₹600. What is his profit percent?",
+    "options": [
+      "16.67%",
+      "25%",
+      "20%",
+      "10%"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Profit = ₹100, so profit % = 100/500 × 100 = 20%.",
+    "hint": "Profit percent is always calculated on the cost price.",
+    "code": null
+  },
+  {
+    "id": "quant.profit_loss.q02",
+    "topicId": "quant.profit_loss",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "An article bought for ₹800 is sold at a loss of 15%. What is the selling price?",
+    "options": [
+      "₹920",
+      "₹785",
+      "₹650",
+      "₹680"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Loss = 15% of 800 = ₹120, so SP = 800 - 120 = ₹680.",
+    "hint": "Find 15% of the cost price and subtract it.",
+    "code": null
+  },
+  {
+    "id": "quant.profit_loss.q03",
+    "topicId": "quant.profit_loss",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "The marked price of a shirt is ₹1,200 and a discount of 10% is given. Find the selling price in ₹.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "1080",
+    "explanation": "Discount = 10% of 1,200 = ₹120, so SP = 1,200 - 120 = ₹1,080.",
+    "hint": "Discount is calculated on the marked price.",
+    "code": null
+  },
+  {
+    "id": "quant.profit_loss.q04",
+    "topicId": "quant.profit_loss",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "By selling a watch for ₹660, Kiran gains 10%. What is the cost price?",
+    "options": [
+      "₹594",
+      "₹600",
+      "₹726",
+      "₹650"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "SP = 110% of CP, so CP = 660 × 100 ÷ 110 = ₹600.",
+    "hint": "The 10% gain is on the cost price, which is unknown. Don't take 10% of ₹660.",
+    "code": null
+  },
+  {
+    "id": "quant.profit_loss.q05",
+    "topicId": "quant.profit_loss",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Two successive discounts of 20% and 10% are equal to a single discount of:",
+    "options": [
+      "30%",
+      "32%",
+      "25%",
+      "28%"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Price after both = 0.8 × 0.9 = 0.72 of the original, so the single discount is 28%.",
+    "hint": "The second discount applies to the already reduced price.",
+    "code": null
+  },
+  {
+    "id": "quant.profit_loss.q06",
+    "topicId": "quant.profit_loss",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "A shopkeeper marks his goods 40% above the cost price and allows a discount of 25%. What is his profit percent?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "5",
+    "explanation": "Take CP = ₹100. MP = ₹140, SP = 140 × 0.75 = ₹105, so the profit is 5%.",
+    "hint": "Assume the cost price is ₹100 and work forward.",
+    "code": null
+  },
+  {
+    "id": "quant.profit_loss.q07",
+    "topicId": "quant.profit_loss",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "The cost price of 20 articles equals the selling price of 16 articles. What is the profit percent?",
+    "options": [
+      "20%",
+      "16%",
+      "25%",
+      "4%"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Let each CP = ₹1, so SP of 16 articles = ₹20 and SP of one = 20/16 = ₹1.25. Profit = 25%.",
+    "hint": "Assume the cost price of one article is ₹1.",
+    "code": null
+  },
+  {
+    "id": "quant.profit_loss.q08",
+    "topicId": "quant.profit_loss",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Suresh sells two phones for ₹9,900 each. He gains 10% on one and loses 10% on the other. What is his overall result?",
+    "options": [
+      "1% loss",
+      "No profit, no loss",
+      "1% gain",
+      "2% loss"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "CPs are 9,900 ÷ 1.1 = ₹9,000 and 9,900 ÷ 0.9 = ₹11,000. Total CP = ₹20,000, total SP = ₹19,800, so a loss of 200/20,000 = 1%.",
+    "hint": "Find each cost price separately. Equal gain and loss % on the same SP is not break-even.",
+    "code": null
+  },
+  {
+    "id": "quant.profit_loss.q09",
+    "topicId": "quant.profit_loss",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "A dishonest shopkeeper sells goods at cost price but uses a weight of 800 g instead of 1 kg. What is his gain percent?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "25",
+    "explanation": "He gets the price of 1,000 g for 800 g, so the gain = 200/800 × 100 = 25%.",
+    "hint": "Gain % = error ÷ (true value given) × 100.",
+    "code": null
+  },
+  {
+    "id": "quant.profit_loss.q10",
+    "topicId": "quant.profit_loss",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "A trader marks his goods so that even after a 20% discount he gains 20%. By what percent above the cost price is the marked price?",
+    "options": [
+      "40%",
+      "50%",
+      "44%",
+      "25%"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "0.8 × MP = 1.2 × CP, so MP = 1.5 × CP, which is 50% above the cost price.",
+    "hint": "Take CP = ₹100, find the SP, then find the MP that gives that SP after the discount.",
+    "code": null
+  },
+  {
+    "id": "quant.time_work.q01",
+    "topicId": "quant.time_work",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Ramesh can finish a job in 10 days and Suresh in 15 days. In how many days can they finish it working together?",
+    "options": [
+      "12.5 days",
+      "6 days",
+      "25 days",
+      "5 days"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Together they do 1/10 + 1/15 = 5/30 = 1/6 of the job per day, so they need 6 days.",
+    "hint": "Add their one-day work, not their number of days.",
+    "code": null
+  },
+  {
+    "id": "quant.time_work.q02",
+    "topicId": "quant.time_work",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "6 men can build a wall in 12 days. How many days will 9 men take to build the same wall?",
+    "options": [
+      "18 days",
+      "9 days",
+      "6 days",
+      "8 days"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "Total work = 6 × 12 = 72 man-days, so 9 men need 72 ÷ 9 = 8 days.",
+    "hint": "More men means fewer days. Find the total man-days.",
+    "code": null
+  },
+  {
+    "id": "quant.time_work.q03",
+    "topicId": "quant.time_work",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "Priya does 1/4 of a piece of work in 5 days. How many days will she take to finish the whole work?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "20",
+    "explanation": "1/4 of the work takes 5 days, so the whole work takes 4 × 5 = 20 days.",
+    "hint": "How many quarters make the whole work?",
+    "code": null
+  },
+  {
+    "id": "quant.time_work.q04",
+    "topicId": "quant.time_work",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "A and B together can do a work in 12 days. A alone can do it in 20 days. In how many days can B alone do it?",
+    "options": [
+      "30 days",
+      "8 days",
+      "32 days",
+      "16 days"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "B's one-day work = 1/12 - 1/20 = 2/60 = 1/30, so B needs 30 days.",
+    "hint": "Subtract A's one-day work from the combined one-day work.",
+    "code": null
+  },
+  {
+    "id": "quant.time_work.q05",
+    "topicId": "quant.time_work",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "Pipe A can fill a tank in 6 hours and pipe B can empty it in 9 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "3.6 hours",
+      "15 hours",
+      "18 hours",
+      "3 hours"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Net filling per hour = 1/6 - 1/9 = 1/18, so the tank fills in 18 hours.",
+    "hint": "The emptying pipe works against the filling pipe.",
+    "code": null
+  },
+  {
+    "id": "quant.time_work.q06",
+    "topicId": "quant.time_work",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "A can do a work in 15 days and B in 20 days. They work together for 4 days, then B leaves. In how many more days will A finish the remaining work?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "8",
+    "explanation": "In 4 days they do 4 × (1/15 + 1/20) = 4 × 7/60 = 7/15. Remaining = 8/15, which A finishes in 8/15 × 15 = 8 days.",
+    "hint": "Find the work done together in 4 days first.",
+    "code": null
+  },
+  {
+    "id": "quant.time_work.q07",
+    "topicId": "quant.time_work",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "12 men can complete a work in 18 days. After they have worked for 6 days, 4 more men join them. In how many days will the remaining work be finished?",
+    "options": [
+      "12 days",
+      "8 days",
+      "9 days",
+      "13.5 days"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Total = 12 × 18 = 216 man-days, of which 12 × 6 = 72 are done. The remaining 144 man-days ÷ 16 men = 9 days.",
+    "hint": "Count the work in man-days and subtract what is already done.",
+    "code": null
+  },
+  {
+    "id": "quant.time_work.q08",
+    "topicId": "quant.time_work",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "A is twice as efficient as B. Together they finish a work in 18 days. In how many days can A alone finish it?",
+    "options": [
+      "36 days",
+      "54 days",
+      "24 days",
+      "27 days"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "If B does 1 unit per day and A does 2, total work = 3 × 18 = 54 units. A alone needs 54 ÷ 2 = 27 days.",
+    "hint": "Give A and B efficiencies in the ratio 2 : 1 and find the total work.",
+    "code": null
+  },
+  {
+    "id": "quant.time_work.q09",
+    "topicId": "quant.time_work",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "Pipes A and B can fill a tank in 12 hours and 15 hours. Pipe C can empty it in 20 hours. If all three are opened together, in how many hours will the empty tank be filled?",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "10",
+    "explanation": "Net per hour = 1/12 + 1/15 - 1/20 = (5 + 4 - 3)/60 = 1/10, so it fills in 10 hours.",
+    "hint": "Add the filling rates and subtract the emptying rate.",
+    "code": null
+  },
+  {
+    "id": "quant.time_work.q10",
+    "topicId": "quant.time_work",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "A and B can do a work in 12 days, B and C in 15 days, and C and A in 20 days. In how many days can A, B and C together do it?",
+    "options": [
+      "5 days",
+      "10 days",
+      "8 days",
+      "12 days"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Adding the pairs: 2(A + B + C) = 1/12 + 1/15 + 1/20 = 12/60 = 1/5, so A + B + C = 1/10 per day, which is 10 days.",
+    "hint": "Adding all three pair-rates counts each person twice.",
+    "code": null
+  },
+  {
+    "id": "quant.interest.q01",
+    "topicId": "quant.interest",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Find the simple interest on ₹5,000 at 8% per annum for 3 years.",
+    "options": [
+      "₹1,200",
+      "₹400",
+      "₹1,260",
+      "₹6,200"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "SI = P × R × T ÷ 100 = 5,000 × 8 × 3 ÷ 100 = ₹1,200.",
+    "hint": "Use SI = PRT/100.",
+    "code": null
+  },
+  {
+    "id": "quant.interest.q02",
+    "topicId": "quant.interest",
+    "type": "numeric",
+    "difficulty": 1,
+    "question": "Find the amount on ₹2,000 at 5% per annum simple interest for 4 years. Give your answer in ₹.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "2400",
+    "explanation": "SI = 2,000 × 5 × 4 ÷ 100 = ₹400, so amount = 2,000 + 400 = ₹2,400.",
+    "hint": "Amount = principal + interest.",
+    "code": null
+  },
+  {
+    "id": "quant.interest.q03",
+    "topicId": "quant.interest",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "At what rate of simple interest per annum will ₹1,500 earn ₹450 in 5 years?",
+    "options": [
+      "5%",
+      "3%",
+      "30%",
+      "6%"
+    ],
+    "answerIndex": 3,
+    "answerText": null,
+    "explanation": "R = SI × 100 ÷ (P × T) = 450 × 100 ÷ (1,500 × 5) = 6%.",
+    "hint": "Rearrange SI = PRT/100 to find R.",
+    "code": null
+  },
+  {
+    "id": "quant.interest.q04",
+    "topicId": "quant.interest",
+    "type": "mcq",
+    "difficulty": 1,
+    "question": "Find the compound interest on ₹10,000 at 10% per annum for 2 years, compounded annually.",
+    "options": [
+      "₹2,100",
+      "₹2,000",
+      "₹12,100",
+      "₹2,210"
+    ],
+    "answerIndex": 0,
+    "answerText": null,
+    "explanation": "Amount = 10,000 × 1.1 × 1.1 = ₹12,100, so CI = 12,100 - 10,000 = ₹2,100.",
+    "hint": "In the second year, interest is also earned on the first year's interest.",
+    "code": null
+  },
+  {
+    "id": "quant.interest.q05",
+    "topicId": "quant.interest",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "A sum of money doubles itself in 8 years at simple interest. What is the rate of interest per annum?",
+    "options": [
+      "8%",
+      "10%",
+      "12.5%",
+      "25%"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Interest = principal in 8 years, so 100% in 8 years, which is 100 ÷ 8 = 12.5% per year.",
+    "hint": "Doubling means the interest earned equals the principal.",
+    "code": null
+  },
+  {
+    "id": "quant.interest.q06",
+    "topicId": "quant.interest",
+    "type": "numeric",
+    "difficulty": 2,
+    "question": "Find the difference between compound interest and simple interest on ₹5,000 for 2 years at 10% per annum (compounded annually). Give your answer in ₹.",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "50",
+    "explanation": "For 2 years, CI - SI = P × (R/100)² = 5,000 × 0.01 = ₹50.",
+    "hint": "The difference comes from the interest earned on the first year's interest.",
+    "code": null
+  },
+  {
+    "id": "quant.interest.q07",
+    "topicId": "quant.interest",
+    "type": "mcq",
+    "difficulty": 2,
+    "question": "What amount will ₹8,000 become in 3 years at 10% per annum, compounded annually?",
+    "options": [
+      "₹10,400",
+      "₹10,648",
+      "₹2,648",
+      "₹10,800"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "Amount = 8,000 × (1.1)³ = 8,000 × 1.331 = ₹10,648.",
+    "hint": "Use A = P(1 + R/100)ⁿ.",
+    "code": null
+  },
+  {
+    "id": "quant.interest.q08",
+    "topicId": "quant.interest",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "Find the compound interest on ₹16,000 for 9 months at 20% per annum, compounded quarterly.",
+    "options": [
+      "₹2,400",
+      "₹2,560",
+      "₹2,522",
+      "₹2,640"
+    ],
+    "answerIndex": 2,
+    "answerText": null,
+    "explanation": "Quarterly rate = 5% and there are 3 quarters. Amount = 16,000 × (1.05)³ = ₹18,522, so CI = ₹2,522.",
+    "hint": "For quarterly compounding, divide the yearly rate by 4 and count quarters.",
+    "code": null
+  },
+  {
+    "id": "quant.interest.q09",
+    "topicId": "quant.interest",
+    "type": "numeric",
+    "difficulty": 3,
+    "question": "A sum of money at compound interest amounts to ₹6,050 in 2 years and ₹6,655 in 3 years. Find the rate of interest per annum (in %).",
+    "options": [],
+    "answerIndex": null,
+    "answerText": "10",
+    "explanation": "In the 3rd year, ₹6,050 earns 6,655 - 6,050 = ₹605, which is 605/6,050 × 100 = 10%.",
+    "hint": "The extra amount in year 3 is one year's interest on the year-2 amount.",
+    "code": null
+  },
+  {
+    "id": "quant.interest.q10",
+    "topicId": "quant.interest",
+    "type": "mcq",
+    "difficulty": 3,
+    "question": "The difference between compound interest and simple interest on a sum for 2 years at 5% per annum is ₹25. Find the sum.",
+    "options": [
+      "₹5,000",
+      "₹10,000",
+      "₹20,000",
+      "₹12,500"
+    ],
+    "answerIndex": 1,
+    "answerText": null,
+    "explanation": "For 2 years, CI - SI = P × (5/100)², so P × 1/400 = 25 and P = ₹10,000.",
+    "hint": "Use the 2-year shortcut: difference = P(R/100)².",
+    "code": null
+  }
+]

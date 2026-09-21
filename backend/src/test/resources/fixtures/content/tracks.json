@@ -1,0 +1,44 @@
+[
+ {
+  "id": "fix-math",
+  "name": "Fixture Kingdom",
+  "world": "School",
+  "subject": "Fixture maths",
+  "description": "Test track",
+  "icon": "function",
+  "recommendedFor": [
+   "school"
+  ],
+  "topics": [
+   {
+    "id": "t.a",
+    "name": "Alpha",
+    "description": "root a",
+    "icon": "plusminus",
+    "tier": 0,
+    "prereqs": [],
+    "diagnostic": true
+   },
+   {
+    "id": "t.b",
+    "name": "Beta",
+    "description": "root b",
+    "icon": "divide",
+    "tier": 0,
+    "prereqs": [],
+    "diagnostic": true
+   },
+   {
+    "id": "t.c",
+    "name": "Gamma",
+    "description": "needs alpha",
+    "icon": "angle",
+    "tier": 1,
+    "prereqs": [
+     "t.a"
+    ],
+    "diagnostic": false
+   }
+  ]
+ }
+]

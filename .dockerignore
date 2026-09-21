@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+backend/data/
+**/build/
+**/.gradle/
+**/.kotlin/
+android/
+docs/
+.agents/
+*.md
