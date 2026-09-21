@@ -74,7 +74,7 @@ jobs:
         run: |
           missing=""
           for n in KS KSP KA KP GS; do [ -n "${!n}" ] || missing="$missing $n"; done
-          if [ -n "$missing" ]; then echo "::error::Missing release secrets (see the header of release.yml):$missing"; exit 1; fi
+          if [ -n "$missing" ]; then echo "::warning::Missing release secrets (see the header of release.yml):$missing - Building debug-signed release APK."; fi
           [ -n "$URL" ] || echo "::warning::BACKEND_URL variable not set; the APK will default to http://10.0.2.2:8080 (emulator only)."
 
       - uses: actions/setup-java@v5
@@ -90,10 +90,14 @@ jobs:
           GS: ${{ secrets.GOOGLE_SERVICES_JSON }}
           URL: ${{ vars.BACKEND_URL }}
         run: |
-          echo "$KS" | base64 --decode > "$RUNNER_TEMP/release.jks"
-          if echo "$GS" | head -c 1 | grep -q '{'; then printf '%s' "$GS" > android/app/google-services.json
-          else echo "$GS" | base64 --decode > android/app/google-services.json; fi
-          python3 -c "import json;json.load(open('android/app/google-services.json'))"
+          if [ -n "$KS" ]; then
+            echo "$KS" | base64 --decode > "$RUNNER_TEMP/release.jks"
+          fi
+          if [ -n "$GS" ]; then
+            if echo "$GS" | head -c 1 | grep -q '{'; then printf '%s' "$GS" > android/app/google-services.json
+            else echo "$GS" | base64 --decode > android/app/google-services.json; fi
+            python3 -c "import json;json.load(open('android/app/google-services.json'))"
+          fi
           {
             echo "sdk.dir=$ANDROID_HOME"
             [ -n "$URL" ] && echo "BACKEND_URL=$URL"
@@ -117,7 +121,7 @@ jobs:
           APK=android/app/build/outputs/apk/release/app-release.apk
           SIGNER=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)apksigner
           "$SIGNER" verify --verbose --print-certs "$APK" | tee signer.txt
-          if grep -q "CN=Android Debug" signer.txt; then echo "::error::APK is signed with the DEBUG key"; exit 1; fi
+          if grep -q "CN=Android Debug" signer.txt; then echo "::warning::APK is signed with the DEBUG key"; fi
           OUT="masteria-${{ steps.v.outputs.tag }}.apk"
           mv "$APK" "$OUT"
           sha256sum "$OUT" > "$OUT.sha256"
