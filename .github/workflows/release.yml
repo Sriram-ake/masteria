@@ -98,10 +98,10 @@ jobs:
             else echo "$GS" | base64 --decode > android/app/google-services.json; fi
             python3 -c "import json;json.load(open('android/app/google-services.json'))"
           fi
-          {
-            echo "sdk.dir=$ANDROID_HOME"
-            [ -n "$URL" ] && echo "BACKEND_URL=$URL"
-          } > android/local.properties
+          echo "sdk.dir=$ANDROID_HOME" > android/local.properties
+          if [ -n "$URL" ]; then
+            echo "BACKEND_URL=$URL" >> android/local.properties
+          fi
 
       - name: Build release APK
         working-directory: android
