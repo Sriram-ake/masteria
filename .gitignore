@@ -46,3 +46,12 @@ android/app/google-services.json
 captures/
 .externalNativeBuild/
 .cxx/
+
+# AI-assistant / tooling folders and internal working notes (kept locally, not in the repo)
+.claude/
+.agents/
+skills-lock.json
+HANDOFF.md
+RUN_GUIDE.md
+context.md
+Education_RPG_Universal_Product_Specifications.md
